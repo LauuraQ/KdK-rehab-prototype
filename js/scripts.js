@@ -11,42 +11,42 @@ document.addEventListener('DOMContentLoaded', () => {
     const includes = document.querySelectorAll('[data-include]');
 
     // Умное определение базового пути:
-    // На GitHub Pages (в подпапке) подставит '/KdK-rehab-prototype'
-    // На локальном Live Server (localhost) оставит пустую строку ''
+    // На GitHub Pages подставит '/KdK-rehab-prototype'
+    // На локальном Live Server оставит пустую строку ''
     const isGitHubPages = window.location.hostname.includes('github.io');
     const basePath = isGitHubPages ? '/KdK-rehab-prototype' : '';
 
     includes.forEach(element => {
         const file = element.getAttribute('data-include');
 
-        // Скачиваем файл с учетом правильного базового пути
+        // Скачиваем файл с правильным префиксом basePath
         fetch(`${basePath}/${file}.html`)
             .then(response => {
-                if (!response.ok) throw new Error(`Ошибка загрузки: ${file}.html`);
+                if (!response.ok) throw new Error(`Ошибка загрузки: ${file}`);
                 return response.text();
             })
             .then(data => {
                 let htmlText = data;
 
-                // Важно: если мы на GitHub, пути к ссылкам внутри хедера/футера тоже нужно поправить!
-                // Меняем ссылки вида href="/..." на href="/KdK-rehab-prototype/..."
+                // Если мы на GitHub Pages, корректируем пути КАРТИНОК и ССЫЛОК внутри загруженного хедера/футера
                 if (basePath) {
+                    // Эта магия превращает href="/кдкреабцентр.html" в href="/KdK-rehab-prototype/кдкреабцентр.html"
+                    // А также src="./conten/logo.svg" или src="/conten/logo.svg" в правильные пути
                     htmlText = htmlText.replace(/(href|src)="\/([^"]*)"/g, `$1="${basePath}/$2"`);
+                    htmlText = htmlText.replace(/(href|src)="\.\/([^"]*)"/g, `$1="${basePath}/$2"`);
                 }
 
                 element.innerHTML = htmlText;
 
-                // Навешиваем события ПОСЛЕ того, как HTML физически вставился на страницу
+                // Активируем клики после вставки HTML
                 if (file === 'header') {
                     initHeaderEvents();
                 }
-
-                // Добавляем обработку для футера
                 if (file === 'footer') {
                     initFooterEvents();
                 }
             })
-            .catch(error => console.error(error));
+            .catch(error => console.error(`Error loading ${file}:`, error));
     });
 
 
