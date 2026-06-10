@@ -7,34 +7,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
     // Находим все элементы с атрибутом data-include
     const includes = document.querySelectorAll('[data-include]');
 
-    // Имя вашего репозитория на GitHub Pages (оставьте пустой строкой '', если корень - это домен)
-    const basePath = '';
+    // Умное определение базового пути:
+    // На GitHub Pages (в подпапке) подставит '/KdK-rehab-prototype'
+    // На локальном Live Server (localhost) оставит пустую строку ''
+    const isGitHubPages = window.location.hostname.includes('github.io');
+    const basePath = isGitHubPages ? '/KdK-rehab-prototype' : '';
 
     includes.forEach(element => {
         const file = element.getAttribute('data-include');
 
+        // Скачиваем файл с учетом правильного базового пути
         fetch(`${basePath}/${file}.html`)
             .then(response => {
-                if (!response.ok) throw new Error(`Ошибка загрузки: ${file}`);
+                if (!response.ok) throw new Error(`Ошибка загрузки: ${file}.html`);
                 return response.text();
             })
             .then(data => {
-                element.innerHTML = data;
+                let htmlText = data;
 
-                // Если внутри хедера/футера были интерактивные элементы (например, попап ЛК),
-                // инициализируем их обработчики здесь, ПОСЛЕ вставки HTML
+                // Важно: если мы на GitHub, пути к ссылкам внутри хедера/футера тоже нужно поправить!
+                // Меняем ссылки вида href="/..." на href="/KdK-rehab-prototype/..."
+                if (basePath) {
+                    htmlText = htmlText.replace(/(href|src)="\/([^"]*)"/g, `$1="${basePath}/$2"`);
+                }
+
+                element.innerHTML = htmlText;
+
+                // Навешиваем события ПОСЛЕ того, как HTML физически вставился на страницу
                 if (file === 'header') {
                     initHeaderEvents();
+                }
+
+                // Добавляем обработку для футера
+                if (file === 'footer') {
+                    initFooterEvents();
                 }
             })
             .catch(error => console.error(error));
     });
-
 
 
 
@@ -234,13 +247,13 @@ function openLightbox(cardElement) {
 
     lightbox.classList.add('active');
     document.body.style.overflow = 'hidden'; // Отключаем прокрутку сайта на фоне
-}
+};
 
 function closeLightbox() {
     const lightbox = document.getElementById('lightbox');
     lightbox.classList.remove('active');
     document.body.style.overflow = ''; // Возвращаем скролл
-}
+};
 // Функции модального окна видео
 function openVideoModal(videoUrl) {
     const modal = document.getElementById('videoModal');
@@ -251,7 +264,7 @@ function openVideoModal(videoUrl) {
 
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
-}
+};
 
 function closeVideoModal() {
     const modal = document.getElementById('videoModal');
@@ -260,7 +273,7 @@ function closeVideoModal() {
     modal.classList.remove('active');
     iframe.src = ""; // Сбрасываем src, чтобы остановить воспроизведение видео
     document.body.style.overflow = '';
-}
+};
 
 function initHeaderEvents() {
     const authPopup = document.getElementById("auth-popup");
@@ -297,4 +310,20 @@ function initHeaderEvents() {
             document.body.classList.remove("popup-opened");
         }
     });
-}
+};
+function initFooterEvents() {
+    const authPopup = document.getElementById("auth-popup");
+    // Находим кнопку ЛК именно внутри футера
+    const openAuthBtnsFooter = document.querySelectorAll(".site-footer .js-open-auth");
+
+    if (!authPopup || !openAuthBtnsFooter) return;
+
+    openAuthBtnsFooter.forEach(btn => {
+        btn.addEventListener("click", function (e) {
+            e.preventDefault();
+            authPopup.classList.add("active");
+            authPopup.classList.add("is-active");
+            document.body.classList.add("popup-opened");
+        });
+    });
+};
