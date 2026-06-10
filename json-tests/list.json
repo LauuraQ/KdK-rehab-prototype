@@ -1,0 +1,418 @@
+{
+    "audit": {
+        "title": "Аудит-тест на выявление алкогольной зависимости (AUDIT)",
+        "description": "Всемирно признанный скрининговый тест, разработанный ВОЗ.",
+        "category": "addiction",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=300&auto=format&fit=crop",
+        "time": "5 минут"
+    },
+    "beck": {
+        "title": "Шкала депрессии Бека (BDI)",
+        "description": "Классический опросник для оценки уровня депрессивных состояний.",
+        "category": "psychiatry",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=300&auto=format&fit=crop",
+        "time": "7 минут"
+    },
+    "hads": {
+        "title": "Госпитальная шкала тревоги и депрессии (HADS)",
+        "description": "Надежный скрининговый инструмент для первичного выявления уровня тревожности и депрессивных состояний.",
+        "category": "psychiatry",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=300&auto=format&fit=crop",
+        "time": "6 минут"
+    },
+    "pss": {
+        "title": "Шкала воспринимаемого стресса (PSS-10)",
+        "description": "Оценка уровня индивидуального стресса и способности справляться с психоэмоциональными нагрузками.",
+        "category": "neurosis",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1474418397713-7ede21cc4911?q=80&w=300&auto=format&fit=crop",
+        "time": "4 минуты"
+    },
+    "scoff": {
+        "title": "Скрининг расстройств пищевого поведения (SCOFF+)",
+        "description": "Экспресс-тестирование на выявление скрытых маркеров анорексии, булимии и компульсивного переедания.",
+        "category": "psychiatry",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=300&auto=format&fit=crop",
+        "time": "3 минуты"
+    },
+    "psqi": {
+        "title": "Питтсбургский индекс качества сна (PSQI)",
+        "description": "Скрининг нарушений сна, оценка уровня инсомнии и эффективности ночного восстановления организма.",
+        "category": "psychiatry",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1511295742364-92b9345f6852?q=80&w=300&auto=format&fit=crop",
+        "time": "4 минуты"
+    },
+    "cias": {
+        "title": "Тест на интернет-зависимость Чена (CIAS)",
+        "description": "Клинический опросник для глубокой оценки нехимической зависимости от цифровой среды, гаджетов и соцсетей.",
+        "category": "addiction",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1546054454-aa26e2b734c7?q=80&w=300&auto=format&fit=crop",
+        "time": "6 минут"
+    },
+    "fass": {
+        "title": "Шкала созависимости Спонн-Фишер (FASS)",
+        "description": "Глубокая диагностика личностных границ, склонности к эмоциональной зависимости и растворению в партнере.",
+        "category": "addiction",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=300&auto=format&fit=crop",
+        "time": "5 минут"
+    },
+    "stai": {
+        "title": "Шкала личностной тревожности Спилбергера-Ханина",
+        "description": "Клинический стандарт для выявления глубинной склонности к беспокойству, паническим мыслям и стресс-реакциям.",
+        "category": "psychiatry",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=300&auto=format&fit=crop",
+        "time": "5 минут"
+    },
+    "neurosis": {
+        "title": "Шкала вегетативных и психосоматических нарушений",
+        "description": "Скрининговый опросник Яхина-Менделевича для выявления невротических состояний и телесных реакций на стресс.",
+        "category": "neurosis",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?q=80&w=300&auto=format&fit=crop",
+        "time": "5 минут"
+    },
+    "ybocs": {
+        "title": "Обсессивно-компульсивная шкала Йеля-Брауна (Y-BOCS)",
+        "description": "Профессиональный скрининг на выявление навязчивых мыслей, тревожных ритуалов и признаков ОКР.",
+        "category": "psychiatry",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=300&auto=format&fit=crop",
+        "time": "5 минут"
+    },
+    "scl": {
+        "title": "Шкала соматоформных и невротических расстройств",
+        "description": "Клинический скрининг на основе методики SCL-90-R. Оценка влияния стресса на физическое самочувствие.",
+        "category": "neurosis",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=300&auto=format&fit=crop",
+        "time": "5 минут"
+    },
+    "gambling": {
+        "title": "Тест на игровую зависимость (Лудомания)",
+        "description": "Клинический скрининг на выявление компульсивной тяги к азартным играм, ставкам и эмоциональному трейдингу.",
+        "category": "addiction",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1596838132731-3301c3fd4317?q=80&w=300&auto=format&fit=crop",
+        "time": "3 минуты"
+    },
+    "asrs": {
+        "title": "Шкала симптомов СДВГ у взрослых (ASRS)",
+        "description": "Официальный скрининг ВОЗ для оценки уровня гиперактивности, дефицита внимания и импульсивности во взрослом возрасте.",
+        "category": "psychiatry",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=300&auto=format&fit=crop",
+        "time": "4 минуты"
+    },
+    "tas": {
+        "title": "Торонтская шкала алекситимии (TAS-20)",
+        "description": "Клинический тест на оценку способности понимать свои эмоции, чувства и отличать их от физических ощущений.",
+        "category": "neurosis",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=300&auto=format&fit=crop",
+        "time": "5 минут"
+    },
+    "internet": {
+        "title": "Тест на интернет-зависимость Кимберли Янг (IAT)",
+        "description": "Клинический стандарт диагностики увлеченности гаджетами, социальными сетями, скроллингом и признаков кибераддикции.",
+        "category": "addiction",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=300&auto=format&fit=crop",
+        "time": "5 минут"
+    },
+    "beck_anxiety": {
+        "title": "Шкала тревоги Бека (BAI)",
+        "description": "Профессиональный клинический инструмент Аарона Бека для комплексной оценки уровня тревожности и панических проявлений.",
+        "category": "psychiatry",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1474418386616-3d6f07ed418a?q=80&w=300&auto=format&fit=crop",
+        "time": "5 минут"
+    },
+    "ptsd": {
+        "title": "Миссисипская шкала ПТСР (Гражданский вариант)",
+        "description": "Клинический скрининг для диагностики последствий психологических травм, затяжных кризисов и посттравматического стрессового расстройства.",
+        "category": "psychiatry",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=300&auto=format&fit=crop",
+        "time": "5 минут"
+    },
+    "burnout": {
+        "title": "Опросник профессионального выгорания Маслач (MBI)",
+        "description": "Золотой стандарт диагностики синдрома эмоционального истощения, рабочего стресса и профессионального кризиса.",
+        "category": "neurosis",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=300&auto=format&fit=crop",
+        "time": "5 минут"
+    },
+    "perfectionism": {
+        "title": "Многомерная шкала перфекционизма Хьюитта-Флетта (MPS)",
+        "description": "Клинический опросник для оценки уровня синдрома отличника, скрытого стремления к безупречности и невротического выгорания.",
+        "category": "neurosis",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=300&auto=format&fit=crop",
+        "time": "5 минут"
+    },
+    "psych_wellbeing": {
+        "title": "Шкала психологического благополучия и стрессоустойчивости",
+        "description": "Клинический опросник для оценки эмоционального баланса, автономии и способности противостоять повседневным кризисам.",
+        "category": "neurosis",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?q=80&w=300&auto=format&fit=crop",
+        "time": "4 минуты"
+    },
+    "emotional_intelligence": {
+        "title": "Тест на эмоциональный интеллект (EQ) Холла",
+        "description": "Клинически адаптированный опросник для оценки способности распознавать свои чувства, управлять стрессом и понимать эмоции других.",
+        "category": "neurosis",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=300&auto=format&fit=crop",
+        "time": "4 минуты"
+    },
+    "procrastination": {
+        "title": "Шкала прокрастинации Тукмана (TPS)",
+        "description": "Клинически валидированный скрининг для оценки уровня хронического откладывания дел, выгорания и невротического избегания задач.",
+        "category": "neurosis",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=300&auto=format&fit=crop",
+        "time": "4 минуты"
+    },
+    "eating_addiction": {
+        "title": "Шкала компульсивного переедания (BES)",
+        "description": "Скрининг для выявления пищевой зависимости, неконтролируемого поедания пищи при стрессе и нарушений РПП.",
+        "category": "addiction",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3676fe?q=80&w=300&auto=format&fit=crop",
+        "time": "4 минуты"
+    },
+    "workaholism": {
+        "title": "Опросник трудоголизма (BWAS)",
+        "description": "Скрининг для оценки аддиктивного отношения к работе, навязчивой потребности трудиться и риска истощения.",
+        "category": "addiction",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=300&auto=format&fit=crop",
+        "time": "5 минут"
+    },
+    "social_media_addiction": {
+        "title": "Зависимость от соцсетей (SMAS)",
+        "description": "Оценка зависимости от цифровых платформ, уровня FOMO и навязчивой потребности в лайках.",
+        "category": "addiction",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=300&auto=format&fit=crop",
+        "time": "5 минут"
+    },
+    "parent_teen_addiction": {
+        "title": "Тест на склонность подростка к зависимому поведению (для родителей)",
+        "description": "Скрининговый опросник для родителей, позволяющий вовремя заметить маркеры химических и нехимических аддикций у ребенка.",
+        "category": "addiction",
+        "audience": "parents",
+        "image": "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=300&auto=format&fit=crop",
+        "time": "5 минут"
+    },
+    "parental_burnout": {
+        "title": "Тест на уровень родительского выгорания и истощения",
+        "description": "Глубокий диагностический опросник для родителей, оценивающий степень эмоционального выгорания, усталости от родительской роли и скрытого стресса.",
+        "category": "neurosis",
+        "audience": "parents",
+        "image": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=300&auto=format&fit=crop",
+        "time": "7 минут"
+    },
+    "express_anxiety_panic": {
+        "title": "Экспресс-скрининг тревоги и панических проявлений",
+        "description": "Углубленный экспресс-тест на выявление скрытого уровня тревожности, склонности к паническим атакам и психосоматическим реакциям.",
+        "category": "express",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=300&auto=format&fit=crop",
+        "time": "7 минут"
+    },
+    "express_adhd_adults": {
+        "title": "Углубленный экспресс-скрининг СДВГ у взрослых",
+        "description": "Комплексный опросник для оценки дефицита внимания, скрытой гиперактивности, импульсивности и трудностей самоорганизации во взрослом возрасте.",
+        "category": "express",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=300&auto=format&fit=crop",
+        "time": "7 минут"
+    },
+    "parent_child_interaction": {
+        "title": "Опросник родительского отношения (Методика ОРО)",
+        "description": "Масштабный диагностический комплекс для анализа стилей воспитания, уровня психологического контроля, авторитаризма и скрытого отвержения ребенка.",
+        "category": "neurosis",
+        "audience": "parents",
+        "image": "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?q=80&w=300&auto=format&fit=crop",
+        "time": "15 минут"
+    },
+    "child_neurosis_parents": {
+        "title": "Скрининг детских страхов и невротизации (Тест Захарова)",
+        "description": "Профессиональный клинический опросник для родителей, позволяющий выявить скрытые невротические проявления, фобии и уровень психоэмоционального напряжения у детей.",
+        "category": "neurosis",
+        "audience": "parents",
+        "image": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=300&auto=format&fit=crop",
+        "time": "10 минут"
+    },
+    "parent_teen_communication": {
+        "title": "Диагностика барьеров в общении с подростком",
+        "description": "Глубокое исследование детско-родительских отношений для выявления зон скрытого конфликта, дефицита доверия и взаимного психологического отчуждения.",
+        "category": "neurosis",
+        "audience": "parents",
+        "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=300&auto=format&fit=crop",
+        "time": "8 минут"
+    },
+    "schmischek": {
+        "title": "Опросник акцентуаций характера Шмишека (Леонгарда)",
+        "description": "Большой клинический опросник (88 вопросов) для определения ключевых черт личности, уязвимостей характера и предрасположенности к психосоматическим срывам.",
+        "category": "psychiatry",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?q=80&w=300&auto=format&fit=crop",
+        "time": "15 минут"
+    },
+    "zung_depression": {
+        "title": "Шкала самооценки депрессии Цунга (SDS)",
+        "description": "Клинически валидированный опросник из 20 пунктов для дифференциальной диагностики депрессивных расстройств и оценки соматических маркеров.",
+        "category": "psychiatry",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=300&auto=format&fit=crop",
+        "time": "6 минут"
+    },
+    "bipolar_mdq": {
+        "title": "Опросник нарушений настроения (Скрининг БАР / MDQ)",
+        "description": "Развернутый клинический опросник на выявление признаков биполярного аффективного расстройства, циклотимии, эпизодов мании и гипомании.",
+        "category": "psychiatry",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?q=80&w=300&auto=format&fit=crop",
+        "time": "8 минут"
+    },
+    "mfi_fatigue": {
+        "title": "Субъективная шкала оценки астении (MFI-20)",
+        "description": "Диагностика синдрома хронической усталости, психической истощаемости, дефицита жизненной энергии и физической астенизации на фоне выгорания.",
+        "category": "neurosis",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=300&auto=format&fit=crop",
+        "time": "6 минут"
+    },
+    "cod_behterev": {
+        "title": "Клинический опросник невротических состояний (Институт им. Бехтерева)",
+        "description": "Глубокая многомерная экспресс-диагностика уровня невротизации, склонности к истерическим, обсессивно-фобическим и вегетативным реакциям.",
+        "category": "neurosis",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=300&auto=format&fit=crop",
+        "time": "12 минут"
+    },
+    "express_borderline": {
+        "title": "Углубленный экспресс-скрининг пограничных состояний личности",
+        "description": "Комплексный тест на выявление эмоциональной нестабильности, трудностей самоидентификации, резких перепадов настроения и межличностных кризисов.",
+        "category": "express",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=300&auto=format&fit=crop",
+        "time": "7 минут"
+    },
+    "express_psychosomatics": {
+        "title": "Экспресс-скрининг психосоматического напряжения",
+        "description": "Быстрый, но развернутый опросник для выявления телесных блоков, конверсионных симптомов и влияния подавленных эмоций на физическое здоровье.",
+        "category": "express",
+        "audience": "adults",
+        "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=300&auto=format&fit=crop",
+        "time": "7 минут"
+    },
+    "parent_depression_anxiety_screening": {
+        "title": "Скрининг депрессивных и тревожных состояний у ребенка (для родителей)",
+        "description": "Клинический опросник для родителей, позволяющий выявить скрытые поведенческие и соматические маркеры депрессии, панических атак и тревожных расстройств у детей и подростков.",
+        "category": "psychiatry",
+        "audience": "parents",
+        "image": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=300&auto=format&fit=crop",
+        "time": "7 минут"
+    },
+    "parent_digital_addiction_gaming": {
+        "title": "Тест на игровую и гаджетовую зависимость у ребенка (для родителей)",
+        "description": "Скрининговый опросник для оценки уровня зависимости ребенка от видеоигр, смартфонов и виртуального мира, а также выявления деструктивного ухода от реальности.",
+        "category": "addiction",
+        "audience": "parents",
+        "image": "https://images.unsplash.com/photo-1546054454-aa26e2b734c7?q=80&w=300&auto=format&fit=crop",
+        "time": "6 минут"
+    },
+    "parent_adhd_asd_child_screening": {
+        "title": "Скрининг признаков СДВГ и РАС у ребенка (для родителей)",
+        "description": "Первичный опросник для родителей, помогающий заметить скрытые маркеры синдрома дефицита внимания и гиперактивности (СДВГ) или расстройств аутистического спектра (РАС) для своевременной коррекции.",
+        "category": "psychiatry",
+        "audience": "parents",
+        "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=300&auto=format&fit=crop",
+        "time": "7 минут"
+    },
+    "parent_express_crisis_screening": {
+        "title": "Экспресс-скрининг острых кризисных состояний ребенка (для родителей)",
+        "description": "Быстрый глубинный тест для родителей, направленный на немедленное выявление маркеров острого психологического кризиса, скрытого суицидального риска или попадания ребенка под деструктивное внешнее влияние.",
+        "category": "express",
+        "audience": "parents",
+        "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=300&auto=format&fit=crop",
+        "time": "5 минут"
+    },
+    "parent_conners_adhd_scale": {
+        "title": "Оценочная шкала Коннерса для родителей (Скрининг СДВГ)",
+        "description": "Клинический стандарт диагностики синдрома дефицита внимания и гиперактивности, позволяющий оценить поведенческие нарушения, импульсивность и проблемы с обучением у ребенка.",
+        "category": "psychiatry",
+        "audience": "parents",
+        "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=300&auto=format&fit=crop",
+        "time": "8 минут"
+    },
+    "parent_mchat_asd_screening": {
+        "title": "Модифицированный скрининговый тест на аутизм у детей (M-CHAT-R)",
+        "description": "Экспертная методика для родителей по раннему выявлению признаков расстройств аутистического спектра (РАС), дефицита социальной коммуникации и задержек развития.",
+        "category": "psychiatry",
+        "audience": "parents",
+        "image": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=300&auto=format&fit=crop",
+        "time": "5 минут"
+    },
+    "parent_child_substance_risk": {
+        "title": "Скрининг риска химических зависимостей у подростка (CRAFFT для родителей)",
+        "description": "Опросник для родителей, помогающий распознать скрытые маркеры употребления алкоголя, вейпов, ПАВ и оценить степень вовлеченности подростка в опасные компании.",
+        "category": "addiction",
+        "audience": "parents",
+        "image": "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=300&auto=format&fit=crop",
+        "time": "5 минут"
+    },
+    "parent_shopping_money_addiction": {
+        "title": "Тест на компульсивное потребление и донатную зависимость (для родителей)",
+        "description": "Специализированный опросник для оценки неконтролируемых трат ребенка: внутриигровые покупки (донаты), шопоголизм, импульсивные микротранзакции и тяга к легким деньгам.",
+        "category": "addiction",
+        "audience": "parents",
+        "image": "https://images.unsplash.com/photo-1596838132731-3301c3fd4317?q=80&w=300&auto=format&fit=crop",
+        "time": "6 минут"
+    },
+    "parent_child_aggression_coi": {
+        "title": "Диагностика детской агрессивности и протестного поведения (Методика Лаврентьевой)",
+        "description": "Опросник для родителей, направленный на дифференциацию скрытой, вербальной и физической агрессии, а также проявлений оппозиционно-вызывающего расстройства у ребенка.",
+        "category": "neurosis",
+        "audience": "parents",
+        "image": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=300&auto=format&fit=crop",
+        "time": "6 минут"
+    },
+    "parent_school_anxiety_phobia": {
+        "title": "Тест на школьную тревожность и школьную фобию (для родителей)",
+        "description": "Анализ психоэмоционального состояния ребенка, выявление невротического страха перед школой, буллингом, экзаменами и соматических реакций на учебный стресс.",
+        "category": "neurosis",
+        "audience": "parents",
+        "image": "https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?q=80&w=300&auto=format&fit=crop",
+        "time": "7 минут"
+    },
+    "parent_express_rpp_screening": {
+        "title": "Экспресс-скрининг скрытых признаков РПП у подростка (для родителей)",
+        "description": "Быстрый тест для выявления ранних поведенческих маркеров анорексии, булимии, жестких диет, резкого недовольства телом и тайного очищения желудка у ребенка.",
+        "category": "express",
+        "audience": "parents",
+        "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=300&auto=format&fit=crop",
+        "time": "4 минуты"
+    },
+    "parent_express_sh_screening": {
+        "title": "Экспресс-тест на маркеры самоповреждающего поведения (для родителей)",
+        "description": "Моментальный глубокий скрининг для родителей, позволяющий вовремя заметить косвенные признаки селфхарма (порезы, скрывание тела, намеренные травмы) и эмоционального тупика.",
+        "category": "express",
+        "audience": "parents",
+        "image": "https://images.unsplash.com/photo-1474418386616-3d6f07ed418a?q=80&w=300&auto=format&fit=crop",
+        "time": "4 минуты"
+    }
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <title>КДК | Институт Возвращения Личности — Центр доктора Калюжной</title>
+    <link rel="icon"
+        href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDIwMCAxNzIiIGZpbGw9Im5vbmUiPgo8cGF0aCBkPSJNMTMwIDE3MS4yNUw1OC43NSA4NS42MjVMMTMwIDBIOTVMMjcuNSA4MS4yNVYwSDBWMTcxLjI1SDI3LjVMMjcuNSA5MEw5NSAxNzEuMjVIMTMwWiIgZmlsbD0iIzAwNzlCNSIvPgo8cGF0aCBkPSJNMjAwIDE3MS4yNUwxMjguOTcgODUuNjI1TDIwMCAwSDE2NUw5My43NDk4IDg1LjYyNUwxNjUgMTcxLjI1SDIwMFoiIGZpbGw9IiNFNjYwMkEiLz4KPC9zdmc+">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/scripts.js" type="module"></script>
+
+</head>
+
+<body>
+    <header class="site-header" data-include="header"></header>
+
+
+
+
+
+
+    <section class="tests-section">
+        <div class="tests-container">
+
+            <aside class="tests-sidebar">
+                <nav class="tests-nav-vertical">
+                    <!-- Оставляем только чистую фильтрацию по целевой аудитории -->
+                    <button class="tests-nav-vertical__btn active" data-audience="all">Все тесты</button>
+                    <button class="tests-nav-vertical__btn" data-audience="adults">Для взрослых</button>
+                    <button class="tests-nav-vertical__btn" data-audience="parents">Для родителей</button>
+                </nav>
+            </aside>
+
+            <main class="tests-content">
+                <header class="tests-filter-top">
+                    <nav class="tests-nav-horizontal">
+                        <!-- Сюда гармонично встают Экспресс-тесты как отдельная тематика/формат -->
+                        <button class="tests-nav-horizontal__btn active" data-category="all">Все тематики</button>
+                        <button class="tests-nav-horizontal__btn" data-category="addiction">Зависимости</button>
+                        <button class="tests-nav-horizontal__btn" data-category="psychiatry">Психиатрия</button>
+                        <button class="tests-nav-horizontal__btn" data-category="neurosis">Неврозы и стресс</button>
+                        <button class="tests-nav-horizontal__btn" data-category="express">Экспресс-тесты</button>
+                    </nav>
+                </header>
+
+                <div class="tests-list" id="js-tests-container">
+                    <div class="tests-loading">Загрузка доступных тестов...</div>
+                </div>
+            </main>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="auth-popup" id="auth-popup">
+        <div class="auth-popup__overlay js-close-auth"></div>
+        <div class="auth-popup__container">
+            <button class="auth-popup__close js-close-auth" aria-label="Закрыть окно">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+
+            <div class="auth-popup__header">
+                <h3 class="auth-popup__title">Вход в личный кабинет</h3>
+                <p class="auth-popup__subtitle">Доступ к рекомендациям и истории</p>
+            </div>
+
+            <form class="auth-popup__form" action="#" method="POST">
+                <div class="auth-popup__field">
+                    <label class="auth-popup__label" for="auth-login">Логин или Email</label>
+                    <input class="auth-popup__input" type="text" id="auth-login" name="login"
+                        placeholder="Введите ваш логин" required>
+                </div>
+
+                <div class="auth-popup__field">
+                    <label class="auth-popup__label" for="auth-password">Пароль</label>
+                    <input class="auth-popup__input" type="password" id="auth-password" name="password"
+                        placeholder="Введите пароль" required>
+                </div>
+
+                <button class="auth-popup__submit-btn" type="submit">Войти</button>
+            </form>
+
+            <div class="auth-popup__footer">
+                <a href="#forgot" class="auth-popup__link">Забыли пароль?</a>
+                <span class="auth-popup__footer-sep">|</span>
+                <a href="#register" class="auth-popup__link auth-popup__link--reg">Зарегистрироваться</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="side-widgets">
+        <button class="side-widgets__btn side-widgets__btn--scroll-up js-scroll-up" aria-label="Прокрутить наверх">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 15l-6-6-6 6" />
+            </svg>
+        </button>
+
+        <button class="side-widgets__btn side-widgets__btn--accessibility js-accessible-toggle"
+            aria-label="Версия для слабовидящих">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                <circle cx="12" cy="12" r="3" />
+            </svg>
+        </button>
+
+        <button class="side-widgets__btn side-widgets__btn--chat js-doctor-chat" aria-label="Открыть чат с доктором">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+            <span class="side-widgets__chat-badge"></span> </button>
+    </div>
+
+
+
+    <div class="bottom-info__wrapper cookie-policy active" id="cookie-banner">
+        <div class="bottom-info">
+            <span class="bottom-info__content">
+                Мы используем файлы cookie для улучшения работы сайта. Для анализа аудитории настроена
+                <a href="/soglasie-na-obrabotku-personalnyh-dannyh-yandeks-metrika/" rel="nofollow">Яндекс.Метрика</a>.
+                Оставаясь на сайте, вы даете
+                <a href="/soglasie-na-obrabotku-personalnyh-dannyh/" rel="nofollow">согласие на обработку персональных
+                    данных</a>
+                в соответствии с нашей <a href="/policy/" rel="nofollow">Политикой конфиденциальности</a>
+                и <a href="/polzovatelskoe-soglashenie/" rel="nofollow">Пользовательским соглашением</a>.
+            </span>
+            <div class="bottom-info__action">
+                <button class="bottom-info__button-agree js-cookie-close"
+                    aria-label="Принять соглашение">Хорошо</button>
+                <button class="bottom-info__button-cross js-cookie-close" aria-label="Закрыть уведомление"></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer" data-include="footer"></footer>
+</body>
+
+</html>

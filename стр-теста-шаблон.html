@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <title>КДК | Институт Возвращения Личности — Центр доктора Калюжной</title>
+    <link rel="icon"
+        href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDIwMCAxNzIiIGZpbGw9Im5vbmUiPgo8cGF0aCBkPSJNMTMwIDE3MS4yNUw1OC43NSA4NS42MjVMMTMwIDBIOTVMMjcuNSA4MS4yNVYwSDBWMTcxLjI1SDI3LjVMMjcuNSA5MEw5NSAxNzEuMjVIMTMwWiIgZmlsbD0iIzAwNzlCNSIvPgo8cGF0aCBkPSJNMjAwIDE3MS4yNUwxMjguOTcgODUuNjI1TDIwMCAwSDE2NUw5My43NDk4IDg1LjYyNUwxNjUgMTcxLjI1SDIwMFoiIGZpbGw9IiNFNjYwMkEiLz4KPC9zdmc+">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/scripts.js" type="module"></script>
+
+</head>
+
+<body>
+    <header class="site-header" data-include="header"></header>
+
+
+
+
+
+    <section class="quiz-section">
+        <div class="quiz-container">
+
+            <div class="quiz-box" id="quiz-box">
+
+                <div class="quiz-step quiz-step--intro active" id="step-intro">
+                    <span class="quiz-badge">Анонимное тестирование</span>
+                    <h1 class="quiz-main-title">Тест на определение уровня тревожности и стресса</h1>
+                    <p class="quiz-description">
+                        Данный опросник является скрининговым и помогает первично оценить ваше психоэмоциональное
+                        состояние.
+                        Прохождение полностью конфиденциально, ввод личных данных не требуется.
+                    </p>
+                    <div class="quiz-info-meta">
+                        <span>📋 10 вопросов</span>
+                        <span>⏱ ~5 минут</span>
+                    </div>
+                    <button class="quiz-btn quiz-btn--start" id="js-quiz-start">Начать тест</button>
+                </div>
+
+                <div class="quiz-step quiz-step--questions" id="step-questions">
+                    <div class="quiz-progress">
+                        <div class="quiz-progress__header">
+                            <span class="quiz-progress__title">Вопрос <span id="current-question-num">1</span> из <span
+                                    id="total-questions-num">3</span></span>
+                            <span class="quiz-progress__percent" id="quiz-progress-percent">0%</span>
+                        </div>
+                        <div class="quiz-progress__bar">
+                            <div class="quiz-progress__fill" id="quiz-progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question-wrapper" id="quiz-question-container">
+                        <h3 class="quiz-question-title">Заглушка вопроса?</h3>
+                        <div class="quiz-answers">
+                            <label class="quiz-answer-option">
+                                <input type="radio" name="quiz-answer" value="0" class="quiz-answer-input">
+                                <span class="quiz-answer-text">Никогда / Нет</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-nav">
+                        <button class="quiz-btn quiz-btn--secondary" id="js-quiz-prev" disabled>Назад</button>
+                        <button class="quiz-btn" id="js-quiz-next">Далее</button>
+                    </div>
+                </div>
+
+                <div class="quiz-step quiz-step--results" id="step-results">
+                    <div class="quiz-results-header">
+                        <h2 class="quiz-title">Ваш результат готов</h2>
+
+                        <div class="quiz-score-zone" id="quiz-score-zone">
+                            <span class="quiz-score-zone__status" id="quiz-result-status">Анализ...</span>
+                            <span class="quiz-score-zone__points" id="quiz-result-points">0 баллов</span>
+                        </div>
+                    </div>
+
+                    <div class="quiz-interpretation">
+                        <h4 class="quiz-interpretation__title">Рекомендации специалистов:</h4>
+                        <p class="quiz-interpretation__text" id="quiz-result-text">
+                            Загрузка рекомендаций...
+                        </p>
+                    </div>
+
+                    <div class="quiz-email-box">
+                        <h4 class="quiz-email-box__title">Получить развернутый разбор на почту</h4>
+                        <p class="quiz-email-box__subtitle">Введите Email, если хотите сохранить результаты теста и
+                            получить дополнительные материалы по самопомощи.</p>
+
+                        <form class="quiz-email-form" id="js-quiz-email-form">
+                            <input type="email" class="quiz-email-form__input" placeholder="your-email@example.com"
+                                required>
+                            <button type="submit" class="quiz-btn">Отправить результаты</button>
+                        </form>
+                        <div class="quiz-email-success" id="quiz-email-success-msg">✅ Результаты успешно отправлены!
+                        </div>
+                    </div>
+
+                    <div class="quiz-results-actions">
+                        <button class="quiz-btn quiz-btn--secondary" onclick="window.location.reload();">Пройти
+                            заново</button>
+                        <a href="/konsultacii/" class="quiz-btn">Записаться к специалисту</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="auth-popup" id="auth-popup">
+        <div class="auth-popup__overlay js-close-auth"></div>
+        <div class="auth-popup__container">
+            <button class="auth-popup__close js-close-auth" aria-label="Закрыть окно">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+
+            <div class="auth-popup__header">
+                <h3 class="auth-popup__title">Вход в личный кабинет</h3>
+                <p class="auth-popup__subtitle">Доступ к рекомендациям и истории</p>
+            </div>
+
+            <form class="auth-popup__form" action="#" method="POST">
+                <div class="auth-popup__field">
+                    <label class="auth-popup__label" for="auth-login">Логин или Email</label>
+                    <input class="auth-popup__input" type="text" id="auth-login" name="login"
+                        placeholder="Введите ваш логин" required>
+                </div>
+
+                <div class="auth-popup__field">
+                    <label class="auth-popup__label" for="auth-password">Пароль</label>
+                    <input class="auth-popup__input" type="password" id="auth-password" name="password"
+                        placeholder="Введите пароль" required>
+                </div>
+
+                <button class="auth-popup__submit-btn" type="submit">Войти</button>
+            </form>
+
+            <div class="auth-popup__footer">
+                <a href="#forgot" class="auth-popup__link">Забыли пароль?</a>
+                <span class="auth-popup__footer-sep">|</span>
+                <a href="#register" class="auth-popup__link auth-popup__link--reg">Зарегистрироваться</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="side-widgets">
+        <button class="side-widgets__btn side-widgets__btn--scroll-up js-scroll-up" aria-label="Прокрутить наверх">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 15l-6-6-6 6" />
+            </svg>
+        </button>
+
+        <button class="side-widgets__btn side-widgets__btn--accessibility js-accessible-toggle"
+            aria-label="Версия для слабовидящих">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                <circle cx="12" cy="12" r="3" />
+            </svg>
+        </button>
+
+        <button class="side-widgets__btn side-widgets__btn--chat js-doctor-chat" aria-label="Открыть чат с доктором">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+            <span class="side-widgets__chat-badge"></span> </button>
+    </div>
+
+
+
+    <div class="bottom-info__wrapper cookie-policy active" id="cookie-banner">
+        <div class="bottom-info">
+            <span class="bottom-info__content">
+                Мы используем файлы cookie для улучшения работы сайта. Для анализа аудитории настроена
+                <a href="/soglasie-na-obrabotku-personalnyh-dannyh-yandeks-metrika/" rel="nofollow">Яндекс.Метрика</a>.
+                Оставаясь на сайте, вы даете
+                <a href="/soglasie-na-obrabotku-personalnyh-dannyh/" rel="nofollow">согласие на обработку персональных
+                    данных</a>
+                в соответствии с нашей <a href="/policy/" rel="nofollow">Политикой конфиденциальности</a>
+                и <a href="/polzovatelskoe-soglashenie/" rel="nofollow">Пользовательским соглашением</a>.
+            </span>
+            <div class="bottom-info__action">
+                <button class="bottom-info__button-agree js-cookie-close"
+                    aria-label="Принять соглашение">Хорошо</button>
+                <button class="bottom-info__button-cross js-cookie-close" aria-label="Закрыть уведомление"></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer" data-include="footer"></footer>
+
+</body>
+
+</html>
