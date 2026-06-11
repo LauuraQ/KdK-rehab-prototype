@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <title>КДК | Институт Возвращения Личности — Центр доктора Калюжной</title>
+    <link rel="icon"
+        href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDIwMCAxNzIiIGZpbGw9Im5vbmUiPgo8cGF0aCBkPSJNMTMwIDE3MS4yNUw1OC43NSA4NS42MjVMMTMwIDBIOTVMMjcuNSA4MS4yNVYwSDBWMTcxLjI1SDI3LjVMMjcuNSA5MEw5NSAxNzEuMjVIMTMwWiIgZmlsbD0iIzAwNzlCNSIvPgo8cGF0aCBkPSJNMjAwIDE3MS4yNUwxMjguOTcgODUuNjI1TDIwMCAwSDE2NUw5My43NDk4IDg1LjYyNUwxNjUgMTcxLjI1SDIwMFoiIGZpbGw9IiNFNjYwMkEiLz4KPC9zdmc+">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/scripts.js" type="module"></script>
+</head>
+
+<body>
+    <header class="site-header" data-include="header"></header>
+
+    <section class="contacts-section">
+        <div class="contacts-container">
+            <div class="contacts-header">
+                <h1 class="contacts-title">Контакты и обратная связь</h1>
+                <p class="contacts-subtitle">Мы всегда на связи, чтобы помочь вам. Выберите удобный способ связи или
+                    посетите нашу клинику лично.</p>
+            </div>
+            <div class="contacts-grid">
+                <div class="contacts-info-block">
+                    <div class="contacts-cards-grid">
+                        <div class="contact-item-card">
+                            <div class="contact-item-card__icon">📍</div>
+                            <div class="contact-item-card__content">
+                                <h4>Наш адрес</h4>
+                                <p>г. Москва, ул. Медицинская, д. 12, корпус 3</p>
+                                <span class="contact-item-card__sub">Этаж 2, офис 204</span>
+                            </div>
+                        </div>
+                        <div class="contact-item-card">
+                            <div class="contact-item-card__icon">📞</div>
+                            <div class="contact-item-card__content">
+                                <h4>Телефоны</h4>
+                                <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                                <p><a href="tel:+78001234567" class="phone-free">8 (800) 123-45-67</a> <span
+                                        class="phone-note">(Бесплатно по РФ)</span></p>
+                            </div>
+                        </div>
+                        <div class="contact-item-card">
+                            <div class="contact-item-card__icon">✉️</div>
+                            <div class="contact-item-card__content">
+                                <h4>Электронная почта</h4>
+                                <p><a href="mailto:info@clinic-test.ru">info@clinic-test.ru</a></p>
+                                <span class="contact-item-card__sub">Для общих вопросов и результатов тестов</span>
+                            </div>
+                        </div>
+                        <div class="contact-item-card">
+                            <div class="contact-item-card__icon">⏱</div>
+                            <div class="contact-item-card__content">
+                                <h4>Режим работы</h4>
+                                <p>Пн – Пт: с 09:00 до 21:00</p>
+                                <p>Сб – Вс: с 10:00 до 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts-map-wrapper">
+                        <h3 class="contacts-map-title">Схема проезда</h3>
+                        <div class="contacts-map-container" id="map">
+                            <iframe
+                                src="https://yandex.ru/map-widget/v1/?um=constructor%3Afa32e783637e163c45731b81666870d069b22a07c08cd9b1836f33290b2bd433&amp;source=constructor"
+                                width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="true">
+                            </iframe>
+                        </div>
+                        <p class="contacts-map-desc"><strong>Как добраться:</strong> Станция метро «Медицинская», выход
+                            №2. Далее 5 минут пешком вдоль сквера прямо до сине-белого здания клиники. Вход под вывеской
+                            «Центр Тестирования».</p>
+                    </div>
+                </div>
+                <div class="contacts-form-block">
+                    <div class="feedback-card-contact">
+                        <h3 class="feedback-card__title">Напишите нам</h3>
+                        <p class="feedback-card__subtitle">Есть вопросы по тестам или нужна консультация? Заполните
+                            форму, и наш специалист свяжется с вами в течение 15 минут.</p>
+                        <form class="feedback-form" id="js-feedback-form">
+                            <div class="feedback-form__group">
+                                <label class="feedback-form__label" for="fb-name">Ваше имя *</label>
+                                <input type="text" id="fb-name" class="feedback-form__input" placeholder="Иван Иванов"
+                                    required>
+                            </div>
+                            <div class="feedback-form__group-row">
+                                <div class="feedback-form__group">
+                                    <label class="feedback-form__label" for="fb-phone">Телефон *</label>
+                                    <input type="tel" id="fb-phone" class="feedback-form__input"
+                                        placeholder="+7 (999) 000-00-00" required>
+                                </div>
+                                <div class="feedback-form__group">
+                                    <label class="feedback-form__label" for="fb-email">E-mail (Необязательно)</label>
+                                    <input type="email" id="fb-email" class="feedback-form__input"
+                                        placeholder="ivan@example.com">
+                                </div>
+                            </div>
+                            <div class="feedback-form__group">
+                                <label class="feedback-form__label" for="fb-message">Ваше сообщение / вопрос *</label>
+                                <textarea id="fb-message" class="feedback-form__textarea" rows="5"
+                                    placeholder="Здравствуйте, у меня вопрос по интерпретации результатов теста..."
+                                    required>
+                                </textarea>
+                            </div>
+                            <div class="feedback-form__checkbox-group">
+                                <input type="checkbox" id="fb-agreement" class="feedback-form__checkbox" required
+                                    checked>
+                                <label for="fb-agreement" class="feedback-form__checkbox-label">
+                                    Я соглашаюсь на обработку <a href="/privacy/">персональных данных</a> и сохранение
+                                    конфиденциальности.
+                                </label>
+                            </div>
+                            <button type="submit" class="feedback-form__submit-btn" id="js-fb-submit">Отправить
+                                сообщение
+                            </button>
+                        </form>
+                        <div class="feedback-success-msg" id="js-fb-success">
+                            <div class="feedback-success-msg__icon">✓</div>
+                            <h4>Сообщение успешно отправлено!</h4>
+                            <p>Наш администратор уже обрабатывает вашу заявку и свяжется с вами в ближайшее время.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="auth-popup" id="auth-popup">
+        <div class="auth-popup__overlay js-close-auth"></div>
+        <div class="auth-popup__container">
+            <button class="auth-popup__close js-close-auth" aria-label="Закрыть окно">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="auth-popup__header">
+                <h3 class="auth-popup__title">Вход в личный кабинет</h3>
+                <p class="auth-popup__subtitle">Доступ к рекомендациям и истории</p>
+            </div>
+            <form class="auth-popup__form" action="#" method="POST">
+                <div class="auth-popup__field">
+                    <label class="auth-popup__label" for="auth-login">Логин или Email</label>
+                    <input class="auth-popup__input" type="text" id="auth-login" name="login"
+                        placeholder="Введите ваш логин" required>
+                </div>
+                <div class="auth-popup__field">
+                    <label class="auth-popup__label" for="auth-password">Пароль</label>
+                    <input class="auth-popup__input" type="password" id="auth-password" name="password"
+                        placeholder="Введите пароль" required>
+                </div>
+                <button type="button" class="auth-popup__submit-btn" onclick="window.location.href='./cabinet.html'">
+                    Войти
+                </button>
+            </form>
+            <div class="auth-popup__footer">
+                <a href="#forgot" class="auth-popup__link">Забыли пароль?</a>
+                <span class="auth-popup__footer-sep">|</span>
+                <a href="#register" class="auth-popup__link auth-popup__link--reg">Зарегистрироваться</a>
+            </div>
+        </div>
+    </div>
+    <div class="side-widgets">
+        <button class="side-widgets__btn side-widgets__btn--scroll-up js-scroll-up" aria-label="Прокрутить наверх">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 15l-6-6-6 6" />
+            </svg>
+        </button>
+        <button class="side-widgets__btn side-widgets__btn--accessibility js-accessible-toggle"
+            aria-label="Версия для слабовидящих">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                <circle cx="12" cy="12" r="3" />
+            </svg>
+        </button>
+        <button class="side-widgets__btn side-widgets__btn--chat js-doctor-chat" aria-label="Открыть чат с доктором">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+            <span class="side-widgets__chat-badge"></span>
+        </button>
+    </div>
+    <div class="bottom-info__wrapper cookie-policy active" id="cookie-banner">
+        <div class="bottom-info">
+            <span class="bottom-info__content">
+                Мы используем файлы cookie для улучшения работы сайта. Для анализа аудитории настроена
+                <a href="/soglasie-na-obrabotku-personalnyh-dannyh-yandeks-metrika/" rel="nofollow">Яндекс.Метрика</a>.
+                Оставаясь на сайте, вы даете
+                <a href="/soglasie-na-obrabotku-personalnyh-dannyh/" rel="nofollow">согласие на обработку персональных
+                    данных</a>
+                в соответствии с нашей <a href="/policy/" rel="nofollow">Политикой конфиденциальности</a>
+                и <a href="/polzovatelskoe-soglashenie/" rel="nofollow">Пользовательским соглашением</a>.
+            </span>
+            <div class="bottom-info__action">
+                <button class="bottom-info__button-agree js-cookie-close"
+                    aria-label="Принять соглашение">Хорошо</button>
+                <button class="bottom-info__button-cross js-cookie-close" aria-label="Закрыть уведомление"></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer" data-include="footer"></footer>
+</body>
+
+</html>

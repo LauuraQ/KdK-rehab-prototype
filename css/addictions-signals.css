@@ -1,0 +1,230 @@
+.addictions-signals-section {
+    padding: 160px 0 100px 0;
+    background-color: var(--color-bg);
+    font-family: var(--font-main);
+}
+
+.signals-header {
+    margin-bottom: 50px;
+    border-bottom: 2px solid rgba(0, 121, 181, 0.1);
+    padding-bottom: 30px;
+}
+
+.signals-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-muted);
+    max-width: 900px;
+    line-height: 1.6;
+}
+
+.signals-longread {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.longread-intro-box {
+    background-color: var(--color-surface);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(7, 37, 63, 0.03);
+    border: 1px solid rgba(0, 121, 181, 0.05);
+    margin-bottom: 50px;
+}
+
+.longread-intro-box p {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: var(--color-muted);
+    margin-bottom: 20px;
+}
+
+.longread-intro-box p:last-child {
+    margin-bottom: 0;
+}
+
+.longread-intro-box em {
+    color: var(--color-accent);
+    font-style: normal;
+    font-weight: 700;
+}
+
+.longread-part {
+    margin-bottom: 60px;
+}
+
+
+.longread-part>p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: var(--color-muted);
+    margin-bottom: 35px;
+}
+
+.addiction-block-type {
+    background-color: var(--color-surface);
+    border-radius: 16px;
+    padding: 40px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 20px rgba(7, 37, 63, 0.02);
+    border: 1px solid rgba(0, 121, 181, 0.06);
+}
+
+.addiction-block-type>p {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: var(--color-muted);
+    margin-bottom: 24px;
+}
+
+.markers-grid-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.markers-column h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 16px;
+}
+
+.addiction-block-type ul,
+.drug-sub-type ul,
+.behavioral-card ul {
+    list-style: none;
+}
+
+.addiction-block-type ul li,
+.drug-sub-type ul li,
+.behavioral-card ul li {
+    position: relative;
+    padding-left: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-muted);
+    margin-bottom: 12px;
+}
+
+.addiction-block-type ul li::before,
+.drug-sub-type ul li::before,
+.behavioral-card ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+}
+
+.addiction-block-type ul li strong,
+.drug-sub-type ul li strong,
+.behavioral-card ul li strong {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.drug-sub-type {
+    margin-top: 30px;
+    padding-top: 24px;
+    border-top: 1px dashed rgba(0, 121, 181, 0.15);
+}
+
+.drug-sub-type h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 12px;
+}
+
+.drug-sub-type p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-muted);
+    margin-bottom: 14px;
+}
+
+.behavioral-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.behavioral-card {
+    background-color: var(--color-surface);
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(7, 37, 63, 0.02);
+    border: 1px solid rgba(0, 121, 181, 0.06);
+    transition: var(--transition);
+}
+
+.behavioral-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-secondary);
+    box-shadow: 0 10px 25px rgba(7, 37, 63, 0.05);
+}
+
+.behavioral-card h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 12px;
+}
+
+.behavioral-card p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--color-muted);
+    margin-bottom: 16px;
+    min-height: 44px;
+}
+
+.universal-markers-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.universal-markers-list li {
+    background-color: #ffffff;
+    padding: 24px 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 121, 181, 0.04);
+}
+
+.universal-markers-list li strong {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 8px;
+}
+
+.universal-markers-list li span {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--color-muted);
+    display: block;
+}
+
+.longread-summary-alert {
+    background: linear-gradient(135deg, var(--color-primary) 0%, #0a2d4d 100%);
+    border-radius: 16px;
+    padding: 40px;
+    color: #ffffff;
+    box-shadow: 0 15px 35px rgba(7, 37, 63, 0.12);
+    text-align: center;
+}
+
+.longread-summary-alert p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    max-width: 850px;
+    margin: 0 auto;
+    font-weight: 500;
+}

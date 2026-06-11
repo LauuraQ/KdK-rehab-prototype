@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 </span>
                                 <span class="test-card__badge">Анонимно</span>
                             </div>
-                            <a href="стр-теста-шаблон.html?type=${key}" class="test-card__btn">Пройти тест</a>
+                            <a href="current-test.html?type=${key}" class="test-card__btn">Пройти тест</a>
                         </div>
                     </div>
                 `;

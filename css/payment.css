@@ -1,0 +1,171 @@
+.payment-section {
+    padding-top: 160px;
+    padding-bottom: 100px;
+    background-color: #f8fafc;
+}
+
+.payment-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.payment-info .section-title {
+    margin-bottom: 24px;
+}
+
+.payment-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a5568;
+    margin-bottom: 20px;
+}
+
+.payment-desc strong {
+    color: #0079B5;
+}
+
+.payment-features-mini {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.pay-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #2d3748;
+}
+
+.pay-feature-item svg {
+    width: 22px;
+    height: 22px;
+    color: #E6602A;
+    flex-shrink: 0;
+}
+
+.payment-methods-box {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2e8f0;
+}
+
+.payment-methods-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 24px;
+}
+
+.payment-systems-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.pay-system-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    background: #ffffff;
+    border: 1px solid #edf2f7;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: help;
+}
+
+.pay-system-card:hover {
+    border-color: #0079B5;
+    box-shadow: 0 4px 12px rgba(0, 121, 181, 0.08);
+    transform: translateY(-2px);
+}
+
+.pay-system-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.pay-system-icon svg {
+    width: 100%;
+    height: 100%;
+    color: #4a5568;
+}
+
+.pay-system-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #718096;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.pay-system-card:hover .pay-system-name {
+    color: #0079B5;
+}
+
+.proto-wide-banner {
+    background: linear-gradient(135deg, var(--color-primary) 0%, #0c3354 100%);
+    border-radius: 20px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 150px;
+    box-shadow: 0 15px 35px rgba(7, 37, 63, 0.15);
+}
+
+.banner-content {
+    max-width: 80%;
+    position: relative;
+    z-index: 2;
+}
+
+.banner-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.banner-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 30px;
+}
+
+.banner-docs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.banner-doc-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.07);
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.banner-doc-item svg {
+    color: var(--color-accent);
+    flex-shrink: 0;
+}

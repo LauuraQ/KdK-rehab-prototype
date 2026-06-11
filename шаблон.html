@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/scripts.js" type="module"></script>
-
 </head>
 
 <body>
@@ -101,31 +100,25 @@
                     <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
             </button>
-
             <div class="auth-popup__header">
                 <h3 class="auth-popup__title">Вход в личный кабинет</h3>
                 <p class="auth-popup__subtitle">Доступ к рекомендациям и истории</p>
             </div>
-
             <form class="auth-popup__form" action="#" method="POST">
                 <div class="auth-popup__field">
                     <label class="auth-popup__label" for="auth-login">Логин или Email</label>
                     <input class="auth-popup__input" type="text" id="auth-login" name="login"
                         placeholder="Введите ваш логин" required>
                 </div>
-
                 <div class="auth-popup__field">
                     <label class="auth-popup__label" for="auth-password">Пароль</label>
                     <input class="auth-popup__input" type="password" id="auth-password" name="password"
                         placeholder="Введите пароль" required>
                 </div>
-
-                <button type="button" class="auth-popup__submit-btn"
-                    onclick="window.location.href='./личный-кабинет.html'">
+                <button type="button" class="auth-popup__submit-btn" onclick="window.location.href='./cabinet.html'">
                     Войти
                 </button>
             </form>
-
             <div class="auth-popup__footer">
                 <a href="#forgot" class="auth-popup__link">Забыли пароль?</a>
                 <span class="auth-popup__footer-sep">|</span>
@@ -133,16 +126,12 @@
             </div>
         </div>
     </div>
-
-
-
     <div class="side-widgets">
         <button class="side-widgets__btn side-widgets__btn--scroll-up js-scroll-up" aria-label="Прокрутить наверх">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M18 15l-6-6-6 6" />
             </svg>
         </button>
-
         <button class="side-widgets__btn side-widgets__btn--accessibility js-accessible-toggle"
             aria-label="Версия для слабовидящих">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -150,16 +139,13 @@
                 <circle cx="12" cy="12" r="3" />
             </svg>
         </button>
-
         <button class="side-widgets__btn side-widgets__btn--chat js-doctor-chat" aria-label="Открыть чат с доктором">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
             </svg>
-            <span class="side-widgets__chat-badge"></span> </button>
+            <span class="side-widgets__chat-badge"></span>
+        </button>
     </div>
-
-
-
     <div class="bottom-info__wrapper cookie-policy active" id="cookie-banner">
         <div class="bottom-info">
             <span class="bottom-info__content">

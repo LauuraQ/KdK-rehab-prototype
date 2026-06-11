@@ -1,6 +1,9 @@
 import './lk.js';
 import './test-razvod.js';
 import './test-str-shablon.js';
+import './contact.js';
+import './payment.js';
+import './patients.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 

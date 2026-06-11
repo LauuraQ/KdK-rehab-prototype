@@ -1,0 +1,289 @@
+.patients-desktop-proto {
+    padding: 160px 0 100px 0;
+    background-color: var(--color-bg);
+    font-family: var(--font-main);
+}
+
+.proto-header {
+    margin-bottom: 40px;
+    border-bottom: 2px solid rgba(0, 121, 181, 0.1);
+    padding-bottom: 30px;
+}
+
+.proto-header .section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 12px;
+}
+
+.proto-header .section-title span {
+    color: var(--color-accent);
+}
+
+.proto-subtitle {
+    font-size: 1.2rem;
+    color: var(--color-muted);
+    max-width: 800px;
+    line-height: 1.5;
+}
+
+.proto-row-two {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.proto-card {
+    background-color: var(--color-surface);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(7, 37, 63, 0.04);
+    border: 1px solid rgba(0, 121, 181, 0.06);
+}
+
+.card-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: rgba(235, 89, 31, 0.1);
+    color: var(--color-accent);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 16px;
+}
+
+.card-text {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--color-muted);
+    margin-bottom: 30px;
+}
+
+.proto-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.proto-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.proto-list-item svg {
+    color: var(--color-secondary);
+    background: rgba(0, 121, 181, 0.06);
+    padding: 10px;
+    border-radius: 10px;
+    box-content: content-box;
+    flex-shrink: 0;
+}
+
+.proto-list-item strong {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    margin-bottom: 4px;
+}
+
+.proto-list-item span {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--color-muted);
+}
+
+.card-checklist {
+    background-color: #ffffff;
+}
+
+.checklist-items {
+    list-style: none !important;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.checklist-items li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-primary);
+    padding: 14px 18px;
+    background-color: var(--color-bg);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 121, 181, 0.03);
+
+    &::before {
+        display: none;
+    }
+}
+
+.checklist-items li svg {
+    color: #00A859;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.proto-faq-section {
+    margin-top: 20px;
+}
+
+.proto-faq-section .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.proto-faq-section .section-title span {
+    color: var(--color-secondary);
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq-item {
+    background-color: var(--color-surface);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 121, 181, 0.08);
+    box-shadow: 0 4px 15px rgba(7, 37, 63, 0.02);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 24px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.faq-question:hover {
+    background-color: rgba(0, 121, 181, 0.02);
+    color: var(--color-secondary);
+}
+
+.faq-question svg {
+    color: var(--color-secondary);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 30px;
+    border-top: 1px dashed transparent;
+    background-color: rgba(244, 248, 250, 0.5);
+    transition: max-height 0.35s cubic-bezier(0.25, 1, 0.5, 1), padding 0.35s ease, border-color 0.35s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    padding: 16px 30px 24px 30px;
+    border-top-color: rgba(0, 121, 181, 0.1);
+}
+
+.faq-item.active .faq-question svg {
+    transform: rotate(180deg);
+}
+
+.faq-answer p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--color-muted);
+}
+
+.patients-longread {
+    max-width: 850px;
+    margin-top: 40px;
+    color: var(--color-primary);
+}
+
+.patients-longread p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--color-muted);
+    margin-bottom: 20px;
+}
+
+
+
+.patients-longread ul {
+    list-style: none !important;
+    margin-bottom: 24px;
+    padding-left: 4px;
+}
+
+.patients-longread ul li {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--color-muted);
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+}
+
+.patients-longread ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+}
+
+.patients-longread ul li strong,
+.patients-longread ol li strong {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.patients-longread ol {
+    list-style: none;
+    counter-reset: longread-counter;
+    margin-bottom: 24px;
+    padding-left: 4px;
+}
+
+.patients-longread ol li {
+    counter-increment: longread-counter;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--color-muted);
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 16px;
+}
+
+.patients-longread ol li::before {
+    content: "0" counter(longread-counter) ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 700;
+    color: var(--color-accent);
+    font-family: var(--font-main);
+}
