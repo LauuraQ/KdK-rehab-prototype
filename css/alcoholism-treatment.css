@@ -1,0 +1,141 @@
+.alcoholism-treatment-section {
+    padding: 160px 0 100px 0;
+    background-color: var(--color-bg);
+    font-family: var(--font-main);
+}
+
+.treatment-header {
+    margin-bottom: 50px;
+    border-bottom: 2px solid rgba(0, 121, 181, 0.1);
+    padding-bottom: 30px;
+}
+
+
+
+.treatment-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-muted);
+    max-width: 900px;
+    line-height: 1.6;
+}
+
+.treatment-longread {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.treatment-intro-box {
+    background-color: var(--color-surface);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(7, 37, 63, 0.03);
+    border: 1px solid rgba(0, 121, 181, 0.05);
+    margin-bottom: 45px;
+}
+
+.treatment-intro-box p {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: var(--color-muted);
+    margin-bottom: 20px;
+}
+
+.treatment-intro-box p:last-child {
+    margin-bottom: 0;
+}
+
+.treatment-longread>h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.treatment-longread>p {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: var(--color-muted);
+    margin-bottom: 22px;
+    text-align: justify;
+}
+
+.doctor-quote-block {
+    background-color: #F4F8FA;
+    border-left: 4px solid var(--color-secondary);
+    padding: 30px 40px;
+    margin: 35px 0;
+    border-radius: 0 16px 16px 0;
+}
+
+.doctor-quote-block p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--color-primary);
+    font-style: italic;
+    margin-bottom: 14px;
+}
+
+.quote-author {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.treatment-table-wrapper {
+    margin: 35px 0 45px 0;
+    background-color: var(--color-surface);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(7, 37, 63, 0.02);
+    border: 1px solid rgba(0, 121, 181, 0.08);
+}
+
+.treatment-comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.treatment-comparison-table th {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    padding: 18px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.treatment-comparison-table td {
+    padding: 16px 20px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--color-muted);
+    border-bottom: 1px solid rgba(0, 121, 181, 0.06);
+}
+
+.treatment-comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+.treatment-comparison-table tr:nth-child(even) {
+    background-color: #F9FBFC;
+}
+
+.treatment-comparison-table td strong {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.treatment-comparison-table th:last-child {
+    background-color: var(--color-secondary);
+}
+
+.treatment-comparison-table tr td:last-child {
+    color: var(--color-primary);
+    font-weight: 500;
+    background-color: rgba(0, 121, 181, 0.02);
+}

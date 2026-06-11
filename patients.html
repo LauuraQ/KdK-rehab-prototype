@@ -56,7 +56,7 @@
                         ваше
                         благополучие.</p>
 
-                    <h3><span>Первый контакт</span> и принципы анонимности</h3>
+                    <h2><span>Первый контакт</span> и принципы анонимности</h2>
                     <p>Большинство пациентов опасаются, что факт обращения в клинику станет известен работодателю,
                         государственным
                         органам или соседям. В нашем центре действует строгий внутренний регламент конфиденциальности.
@@ -80,7 +80,7 @@
                         покупку оружия или
                         ведение профессиональной деятельности.</p>
 
-                    <h3><span>Первичный прием</span> и медицинская этика</h3>
+                    <h2><span>Первичный прием</span> и медицинская этика</h2>
                     <p>Когда вы приходите в центр, вы попадаете в атмосферу уважения и психологической безопасности. У
                         нас полностью
                         исключены директивный тон, морализаторство или давление. Врач выступает в роли союзника, а не
@@ -143,7 +143,7 @@
                             </li>
                         </ul>
                     </div>
-                    <h3><span>Этапы</span> комплексного лечения</h3>
+                    <h2><span>Этапы</span> комплексного лечения</h2>
                     <p>Восстановление личности — это системный процесс, который невозможно свести к одной процедуре. В
                         зависимости от
                         профиля проблемы, программа может включать в себя три ключевых блока:</p>
@@ -164,7 +164,7 @@
                             подготовка к возвращению в привычную жизнь без страха сорваться.</li>
                     </ol>
 
-                    <h3><span>Финансовая и юридическая</span> прозрачность</h3>
+                    <h2><span>Финансовая и юридическая</span> прозрачность</h2>
                     <p>Взаимоотношения между клиникой и пациентом (или его законным представителем) закрепляются
                         официальным договором.
                         В нем четко фиксируются стоимость услуг, права и обязанности сторон. У нас полностью отсутствуют
@@ -433,7 +433,40 @@
 
 
 
-
+    <div id="js-faq-modal" class="faq-modal-overlay">
+        <div class="faq-modal-window">
+            <button id="js-modal-close" class="faq-modal-close-btn" aria-label="Закрыть модальное окно">&times;</button>
+            <div id="js-modal-form-wrapper">
+                <h3>Задать вопрос лично</h3>
+                <p>Наш дежурный клинический психолог ответит вам в течение 15 минут. Это полностью анонимно.</p>
+                <form id="js-faq-feedback-form">
+                    <div class="form-field">
+                        <input type="text" id="faq-fb-name" placeholder="Ваше имя (можно вымышленное)" required>
+                    </div>
+                    <div class="form-field">
+                        <input type="tel" id="faq-fb-phone" placeholder="Номер телефона для связи" required>
+                    </div>
+                    <div class="form-field">
+                        <textarea id="faq-fb-message" placeholder="Ваш вопрос (опишите ситуацию)" rows="4"
+                            required></textarea>
+                    </div>
+                    <button type="submit" id="js-faq-fb-submit" class="modal-submit-btn">Отправить вопрос</button>
+                </form>
+            </div>
+            <div id="js-faq-fb-success" class="modal-success-screen">
+                <div class="success-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                </div>
+                <h3>Вопрос успешно отправлен!</h3>
+                <p>Специалист уже изучает вашу ситуацию. Мы свяжемся с вами в ближайшее время. Благодарим за доверие.
+                </p>
+            </div>
+        </div>
+    </div>
     <div class="auth-popup" id="auth-popup">
         <div class="auth-popup__overlay js-close-auth"></div>
         <div class="auth-popup__container">

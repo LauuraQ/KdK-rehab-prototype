@@ -8,6 +8,9 @@
 @import url("./addictions-signals.css");
 @import url("./parents-guide.css");
 @import url("./about.css");
+@import url("./alcoholism-treatment.css");
+@import url("./pricing.css");
+@import url("./faq.css");
 
 
 
@@ -2811,4 +2814,136 @@ h1 em {
 
 body.popup-opened {
     overflow: hidden;
+}
+
+.faq-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 37, 63, 0.4);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.faq-modal-overlay.is-active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.faq-modal-window {
+    background-color: var(--color-surface);
+    width: 100%;
+    max-width: 500px;
+    padding: 45px;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(7, 37, 63, 0.15);
+    position: relative;
+    transform: translateY(-30px);
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(0, 121, 181, 0.08);
+}
+
+.faq-modal-overlay.is-active .faq-modal-window {
+    transform: translateY(0);
+}
+
+.faq-modal-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--color-muted);
+    cursor: pointer;
+    line-height: 1;
+    transition: var(--transition);
+}
+
+.faq-modal-close-btn:hover {
+    color: var(--color-accent);
+}
+
+.faq-modal-window h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.faq-modal-window p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--color-muted);
+    margin-bottom: 25px;
+}
+
+.form-field {
+    margin-bottom: 16px;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid rgba(0, 121, 181, 0.15);
+    border-radius: 8px;
+    font-family: var(--font-main);
+    font-size: 0.95rem;
+    color: var(--color-primary);
+    background-color: #FAFCFD;
+    transition: var(--transition);
+    outline: none;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    border-color: var(--color-secondary);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(0, 121, 181, 0.05);
+}
+
+.modal-submit-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--color-secondary);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.modal-submit-btn:hover {
+    background-color: #006294;
+}
+
+.modal-submit-btn:disabled {
+    background-color: var(--color-muted);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.modal-success-screen {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-success-screen .success-icon {
+    color: var(--color-secondary);
+    margin-bottom: 20px;
 }

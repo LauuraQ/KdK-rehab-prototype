@@ -1043,8 +1043,40 @@
 
 
 
-
-
+    <div id="js-faq-modal" class="faq-modal-overlay">
+        <div class="faq-modal-window">
+            <button id="js-modal-close" class="faq-modal-close-btn" aria-label="Закрыть модальное окно">&times;</button>
+            <div id="js-modal-form-wrapper">
+                <h3>Задать вопрос лично</h3>
+                <p>Наш дежурный клинический психолог ответит вам в течение 15 минут. Это полностью анонимно.</p>
+                <form id="js-faq-feedback-form">
+                    <div class="form-field">
+                        <input type="text" id="faq-fb-name" placeholder="Ваше имя (можно вымышленное)" required>
+                    </div>
+                    <div class="form-field">
+                        <input type="tel" id="faq-fb-phone" placeholder="Номер телефона для связи" required>
+                    </div>
+                    <div class="form-field">
+                        <textarea id="faq-fb-message" placeholder="Ваш вопрос (опишите ситуацию)" rows="4"
+                            required></textarea>
+                    </div>
+                    <button type="submit" id="js-faq-fb-submit" class="modal-submit-btn">Отправить вопрос</button>
+                </form>
+            </div>
+            <div id="js-faq-fb-success" class="modal-success-screen">
+                <div class="success-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                </div>
+                <h3>Вопрос успешно отправлен!</h3>
+                <p>Специалист уже изучает вашу ситуацию. Мы свяжемся с вами в ближайшее время. Благодарим за доверие.
+                </p>
+            </div>
+        </div>
+    </div>
     <div class="auth-popup" id="auth-popup">
         <div class="auth-popup__overlay js-close-auth"></div>
         <div class="auth-popup__container">

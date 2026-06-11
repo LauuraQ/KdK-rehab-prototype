@@ -13,23 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/scripts.js" type="module"></script>
-
 </head>
 
 <body>
-
     <header class="site-header" data-include="header"></header>
-
-
-
-
-
-
-
 
     <section class="lk-section">
         <div class="lk-container">
-
             <aside class="lk-sidebar">
                 <div class="lk-user-card">
                     <div class="lk-user-avatar">
@@ -43,7 +33,6 @@
                         <span class="lk-user-status">Статус: В сети</span>
                     </div>
                 </div>
-
                 <nav class="lk-menu">
                     <button class="lk-menu__btn active" data-tab="appointment">Запись на прием</button>
                     <button class="lk-menu__btn" data-tab="history">История обращений</button>
@@ -52,9 +41,7 @@
                     <button class="lk-menu__btn" data-tab="anonymous">Вопрос специалисту</button>
                 </nav>
             </aside>
-
             <main class="lk-content">
-
                 <div class="lk-tab-content active" id="tab-appointment">
                     <h2 class="lk-title">Запись на консультацию или приём</h2>
                     <p class="lk-subtitle">Выберите специалиста, удобную дату и время для визита или онлайн-сессии.</p>
@@ -87,7 +74,6 @@
                         <button type="submit" class="lk-btn">Подтвердить запись</button>
                     </form>
                 </div>
-
                 <div class="lk-tab-content" id="tab-history">
                     <h2 class="lk-title">История обращений</h2>
                     <div class="lk-table-wrapper">
@@ -117,7 +103,6 @@
                         </table>
                     </div>
                 </div>
-
                 <div class="lk-tab-content" id="tab-materials">
                     <h2 class="lk-title">Материалы, выписки и назначения</h2>
                     <div class="lk-grid">
@@ -137,7 +122,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="lk-tab-content" id="tab-telemed">
                     <h2 class="lk-title">Онлайн-консультация</h2>
                     <div class="lk-telemed-box">
@@ -146,98 +130,66 @@
                             <span>Ближайшая консультация начнется через 15 минут</span>
                         </div>
                         <p class="lk-telemed-text"><strong>Врач:</strong> Петров В. М.
-                            (Психиатр-нарколог)<br><strong>Время:</strong> Сегодня, 12:00</p>
+                            (Психиатр-нарколог)<br><strong>Время:</strong> Сегодня, 12:00
+                        </p>
                         <div class="lk-telemed-actions">
                             <button class="lk-btn">Войти в видеочат</button>
                             <button class="lk-btn lk-btn--secondary">Открыть текстовый чат</button>
                         </div>
                     </div>
                 </div>
-
                 <div class="lk-tab-content" id="tab-anonymous">
                     <h2 class="lk-title">Вопрос специалисту</h2>
                     <p class="lk-subtitle">Вы можете задать волнующий вас вопрос. Это полностью конфиденциально.
-                        Регистрация или ввод личных данных не требуются.</p>
-
+                        Регистрация или ввод личных данных не требуются.
+                    </p>
                     <form class="lk-form">
                         <div class="lk-form__group">
                             <label class="lk-form__label">Ваш вопрос (опишите ситуацию как можно подробнее)</label>
                             <textarea class="lk-form__textarea" rows="6"
                                 placeholder="Например: Появилась сильная тревога по вечерам, тяжело дышать..."></textarea>
                         </div>
-
                         <button type="submit" class="lk-btn">Отправить </button>
                     </form>
                 </div>
-
             </main>
         </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div id="js-faq-modal" class="faq-modal-overlay">
+        <div class="faq-modal-window">
+            <button id="js-modal-close" class="faq-modal-close-btn" aria-label="Закрыть модальное окно">&times;</button>
+            <div id="js-modal-form-wrapper">
+                <h3>Задать вопрос лично</h3>
+                <p>Наш дежурный клинический психолог ответит вам в течение 15 минут. Это полностью анонимно.</p>
+                <form id="js-faq-feedback-form">
+                    <div class="form-field">
+                        <input type="text" id="faq-fb-name" placeholder="Ваше имя (можно вымышленное)" required>
+                    </div>
+                    <div class="form-field">
+                        <input type="tel" id="faq-fb-phone" placeholder="Номер телефона для связи" required>
+                    </div>
+                    <div class="form-field">
+                        <textarea id="faq-fb-message" placeholder="Ваш вопрос (опишите ситуацию)" rows="4"
+                            required></textarea>
+                    </div>
+                    <button type="submit" id="js-faq-fb-submit" class="modal-submit-btn">Отправить вопрос</button>
+                </form>
+            </div>
+            <div id="js-faq-fb-success" class="modal-success-screen">
+                <div class="success-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                </div>
+                <h3>Вопрос успешно отправлен!</h3>
+                <p>Специалист уже изучает вашу ситуацию. Мы свяжемся с вами в ближайшее время. Благодарим за доверие.
+                </p>
+            </div>
+        </div>
+    </div>
     <div class="auth-popup" id="auth-popup">
         <div class="auth-popup__overlay js-close-auth"></div>
         <div class="auth-popup__container">

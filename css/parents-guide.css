@@ -51,7 +51,6 @@
     margin-bottom: 60px;
 }
 
-
 .guide-section-block>p {
     font-size: 1.15rem;
     line-height: 1.7;
@@ -117,8 +116,6 @@
 .variant-rescuer h4 {
     color: var(--color-secondary);
 }
-
-
 
 .variant-persecutor h4 {
     color: var(--color-accent);

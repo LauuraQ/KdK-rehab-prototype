@@ -10,8 +10,6 @@
     padding-bottom: 30px;
 }
 
-
-
 .about-subtitle {
     font-size: 1.25rem;
     color: var(--color-muted);
@@ -52,7 +50,6 @@
 .about-part-block {
     margin-bottom: 60px;
 }
-
 
 .about-part-block>p {
     font-size: 1.15rem;
