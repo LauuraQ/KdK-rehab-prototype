@@ -1,0 +1,218 @@
+.online-consultation-section {
+    padding: 160px 0 100px 0;
+    background-color: var(--color-bg);
+    font-family: var(--font-main);
+}
+
+.consultation-header {
+    margin-bottom: 45px;
+    border-bottom: 2px solid rgba(0, 121, 181, 0.1);
+    padding-bottom: 30px;
+}
+
+.consultation-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-muted);
+    max-width: 950px;
+    line-height: 1.6;
+}
+
+.consultation-features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.feature-card {
+    background-color: var(--color-surface);
+    padding: 35px;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 121, 181, 0.05);
+    box-shadow: 0 4px 20px rgba(7, 37, 63, 0.01);
+}
+
+.feature-icon {
+    color: var(--color-secondary);
+    margin-bottom: 18px;
+    display: inline-block;
+}
+
+.feature-card h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-muted);
+}
+
+/* Витрина специалистов */
+.doctors-showcase-block h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 30px;
+}
+
+.doctors-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.doctor-card {
+    background-color: var(--color-surface);
+    border-radius: 14px;
+    padding: 30px;
+    border: 1px solid rgba(0, 121, 181, 0.06);
+    box-shadow: 0 4px 25px rgba(7, 37, 63, 0.02);
+    position: relative;
+    overflow: hidden;
+}
+
+.doctor-status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 6px 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border-radius: 0 0 0 14px;
+}
+
+.status-online {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #1e7e34;
+}
+
+.status-schedule {
+    background-color: rgba(0, 121, 181, 0.1);
+    color: var(--color-secondary);
+}
+
+.doctor-info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.doctor-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 25px;
+    flex-shrink: 0;
+}
+
+.avatar-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #EBF2F6;
+    color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.doctor-meta h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 4px;
+}
+
+.doctor-specialty {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+    margin-bottom: 4px;
+}
+
+.doctor-exp {
+    font-size: 0.9rem;
+    color: var(--color-muted);
+}
+
+.doctor-tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed rgba(7, 37, 63, 0.08);
+}
+
+.doctor-tags span {
+    background-color: var(--color-light-bg);
+    color: var(--color-primary);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.doctor-booking-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking-price {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--color-primary);
+}
+
+.connect-btn {
+    padding: 14px 30px;
+    background-color: var(--color-accent);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.connect-btn:hover {
+    background-color: #d64a13;
+    box-shadow: 0 4px 15px rgba(235, 89, 31, 0.2);
+}
+
+.connect-btn.btn-secondary {
+    background-color: var(--color-primary);
+}
+
+.connect-btn.btn-secondary:hover {
+    background-color: #0a2d4d;
+    box-shadow: 0 4px 15px rgba(7, 37, 63, 0.2);
+}
+
+.consultation-legal-notice {
+    margin-top: 60px;
+    background-color: #FFF9F6;
+    padding: 25px 30px;
+    border-radius: 14px;
+}
+
+.consultation-legal-notice p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--color-muted);
+}
+
+.consultation-legal-notice strong {
+    color: var(--color-primary);
+    font-weight: 700;
+}

@@ -1,0 +1,283 @@
+.doctor-profile-section {
+    padding: 40px 0 100px 0;
+    background-color: var(--color-bg);
+    font-family: var(--font-main);
+}
+
+.breadcrumbs {
+    font-size: 0.85rem;
+    color: var(--color-muted);
+    margin-bottom: 40px;
+}
+
+.breadcrumbs a {
+    color: var(--color-muted);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.breadcrumbs a:hover {
+    color: var(--color-secondary);
+}
+
+.profile-layout {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    /* Сайдбар / Текст */
+    gap: 50px;
+    align-items: start;
+}
+
+.profile-sidebar {
+    background-color: var(--color-surface);
+    border: 1px solid rgba(0, 121, 181, 0.06);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 30px rgba(7, 37, 63, 0.02);
+}
+
+.profile-photo-card {
+    width: 100%;
+    height: 340px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    background-color: #EBF2F6;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.profile-status-badge {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: rgba(40, 167, 69, 0.9);
+    backdrop-filter: blur(4px);
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.profile-quick-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding: 15px 0;
+    border-top: 1px solid rgba(7, 37, 63, 0.05);
+    border-bottom: 1px solid rgba(7, 37, 63, 0.05);
+}
+
+.q-stat {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.q-val {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--color-primary);
+}
+
+.q-lbl {
+    font-size: 0.75rem;
+    color: var(--color-muted);
+    margin-top: 2px;
+    line-height: 1.2;
+}
+
+.profile-booking-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--color-accent);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: var(--transition);
+    margin-bottom: 15px;
+}
+
+.profile-booking-btn:hover {
+    background-color: #d64a13;
+    box-shadow: 0 4px 15px rgba(235, 89, 31, 0.2);
+}
+
+.sidebar-notice {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: var(--color-muted);
+    text-align: center;
+}
+
+.profile-header-meta {
+    margin-bottom: 35px;
+    border-bottom: 1px solid rgba(0, 121, 181, 0.08);
+    padding-bottom: 25px;
+}
+
+.expert-tag {
+    display: inline-block;
+    background-color: var(--color-light-bg);
+    color: var(--color-secondary);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.profile-header-meta h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+}
+
+.expert-specialty {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+
+.competencies-block {
+    margin-bottom: 45px;
+}
+
+.competencies-block h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 15px;
+}
+
+.tags-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags-cloud span {
+    background-color: #FAFCFD;
+    color: var(--color-primary);
+    border: 1px solid rgba(7, 37, 63, 0.06);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.info-chunk {
+    margin-bottom: 45px;
+}
+
+.info-chunk h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 18px;
+}
+
+.info-chunk p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.info-chunk blockquote {
+    background-color: #FFF9F6;
+    border-left: 4px solid var(--color-accent);
+    padding: 20px 25px;
+    margin: 25px 0;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: var(--color-primary);
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.education-list li {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 25px;
+    align-items: start;
+}
+
+.edu-year {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--color-secondary);
+    background-color: var(--color-light-bg);
+    padding: 4px 12px;
+    border-radius: 6px;
+    min-width: 65px;
+    text-align: center;
+}
+
+.edu-desc strong {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.edu-desc p {
+    font-size: 0.95rem;
+    color: var(--color-muted);
+    margin: 0;
+}
+
+.documents-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.document-preview-card {
+    border: 1px dashed rgba(0, 121, 181, 0.2);
+    background-color: #FAFCFD;
+    border-radius: 8px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.document-preview-card:hover {
+    border-color: var(--color-secondary);
+    background-color: #ffffff;
+}
+
+.doc-icon {
+    font-size: 1.5rem;
+}
+
+.document-preview-card span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}

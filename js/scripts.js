@@ -4,6 +4,7 @@ import './test-str-shablon.js';
 import './contact.js';
 import './payment.js';
 import './patients.js';
+import './session.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 
