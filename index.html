@@ -1175,190 +1175,411 @@
         <img id="lightbox-img" src="" alt="Увеличенный документ">
     </div>
 
-    <section class="team-section" id="team">
+
+    <section class="clinic-doctors" id="clinic-doctors">
         <div class="container">
-            <div class="team-header">
-                <h2 class="section-title">Наши <span>специалисты</span></h2>
-                <p class="uniqueness-desc">
-                    Врачи высшей категории, кандидаты медицинских наук и профильные эксперты с опытом работы более 15
-                    лет в сфере аддиктологии и психиатрии.
 
-                </p>
+            <div class="doctors-header">
+                <div class="doctors-header__title">
+                    <h2 class="section-title">Врачи <span>клиники</span></h2>
+                    <p class="methodology__subtitle">Реальные специалисты с подтвержденным опытом, стажем и
+                        дипломами</p>
+                </div>
+                <div class="doctors-nav">
+                    <button type="button" class="doc-nav-btn doc-prev-btn" aria-label="Назад">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <span class="doctors-counter">01/03</span>
+                    <button type="button" class="doc-nav-btn doc-next-btn" aria-label="Вперед">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
             </div>
 
-            <div class="team-grid">
-                <article class="team-card">
-                    <div class="member-img-box">
-                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=500&auto=format&fit=crop"
-                            alt="Доктор Калюжная — Главный врач центра КДК" loading="lazy">
-                        <span class="member-experience">Стаж 22 года</span>
-                    </div>
-                    <div class="member-info">
-                        <span class="member-status">Главный врач, К.М.Н.</span>
-                        <h3 class="member-name">Д-р Калюжная Елена В.</h3>
-                        <p class="member-specialty">Психиатр-нарколог, психотерапевт. Автор комплексных программ
-                            реабилитации и противорецидивных протоколов.</p>
-                        <button class="btn-member-action"
-                            onclick="document.getElementById('consultation').scrollIntoView({behavior: 'smooth'})">Консультация
-                            эксперта</button>
-                    </div>
-                </article>
+            <div class="doctors-slider-wrapper">
+                <div class="doctors-slider">
 
-                <article class="team-card">
-                    <div class="member-img-box">
-                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=500&auto=format&fit=crop"
-                            alt="Ведущий психиатр-нарколог" loading="lazy">
-                        <span class="member-experience">Стаж 16 лет</span>
+                    <div class="doctor-card">
+                        <div class="doctor-card__image-box">
+                            <div class="doctor-photo-placeholder"></div>
+
+                            <div class="video-badge">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 12l-22 12v-24z" />
+                                </svg>
+                                Видеовизитка
+                            </div>
+
+                            <div class="doctor-rating-row">
+                                <div class="rating-badge">
+                                    <span class="rating-plus">+</span>
+                                    <div class="rating-meta">
+                                        <span class="rating-num">4.7</span>
+                                        <span class="rating-stars">★★★★★</span>
+                                        <a href="#reviews" class="rating-link">Читать 47 отзывов</a>
+                                    </div>
+                                </div>
+                                <div class="rating-badge">
+                                    <span class="rating-speaker">📢</span>
+                                    <div class="rating-meta">
+                                        <span class="rating-num">4.7</span>
+                                        <span class="rating-stars">★★★★★</span>
+                                        <a href="#reviews" class="rating-link">Читать 47 отзывов</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctor-card__info">
+                            <h3>Калюжная Марина<br>Александровна</h3>
+                            <ul class="doctor-meta-list">
+                                <li>Директор клиники, главный врач, психиатр-нарколог</li>
+                                <li>Стаж работы: 17 лет</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="member-info">
-                        <span class="member-status">Врач высшей категории</span>
-                        <h3 class="member-name">Д-р Мартынов Игорь С.</h3>
-                        <p class="member-specialty">Психиатр, аддиктолог. Специализируется на купировании острых
-                            состояний, детоксикации и лечении сочетанных патологий.</p>
-                        <button class="btn-member-action"
-                            onclick="document.getElementById('consultation').scrollIntoView({behavior: 'smooth'})">Записаться
-                            на прием</button>
+
+                    <div class="doctor-card">
+                        <div class="doctor-card__image-box">
+                            <div class="doctor-photo-placeholder"></div>
+
+                            <div class="video-badge">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 12l-22 12v-24z" />
+                                </svg>
+                                Видеовизитка
+                            </div>
+
+                            <div class="doctor-rating-row">
+                                <div class="rating-badge">
+                                    <span class="rating-plus">+</span>
+                                    <div class="rating-meta">
+                                        <span class="rating-num">4.7</span>
+                                        <span class="rating-stars">★★★★★</span>
+                                        <a href="#reviews" class="rating-link">Читать 47 отзывов</a>
+                                    </div>
+                                </div>
+                                <div class="rating-badge">
+                                    <span class="rating-speaker">📢</span>
+                                    <div class="rating-meta">
+                                        <span class="rating-num">4.7</span>
+                                        <span class="rating-stars">★★★★★</span>
+                                        <a href="#reviews" class="rating-link">Читать 47 отзывов</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctor-card__info">
+                            <h3>Калюжная Марина<br>Александровна</h3>
+                            <ul class="doctor-meta-list">
+                                <li>Директор клиники, главный врач, психиатр-нарколог</li>
+                                <li>Стаж работы: 17 лет</li>
+                            </ul>
+                        </div>
                     </div>
-                </article>
-                <article class="team-card">
-                    <div class="member-img-box">
-                        <img src="https://images.unsplash.com/photo-1594824813573-246434de83fb?q=80&w=500&auto=format&fit=crop"
-                            alt="Руководитель психологической службы" loading="lazy">
-                        <span class="member-experience">Стаж 12 лет</span>
+                    <div class="doctor-card">
+                        <div class="doctor-card__image-box">
+                            <div class="doctor-photo-placeholder"></div>
+
+                            <div class="video-badge">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 12l-22 12v-24z" />
+                                </svg>
+                                Видеовизитка
+                            </div>
+
+                            <div class="doctor-rating-row">
+                                <div class="rating-badge">
+                                    <span class="rating-plus">+</span>
+                                    <div class="rating-meta">
+                                        <span class="rating-num">4.7</span>
+                                        <span class="rating-stars">★★★★★</span>
+                                        <a href="#reviews" class="rating-link">Читать 47 отзывов</a>
+                                    </div>
+                                </div>
+                                <div class="rating-badge">
+                                    <span class="rating-speaker">📢</span>
+                                    <div class="rating-meta">
+                                        <span class="rating-num">4.7</span>
+                                        <span class="rating-stars">★★★★★</span>
+                                        <a href="#reviews" class="rating-link">Читать 47 отзывов</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctor-card__info">
+                            <h3>Калюжная Марина<br>Александровна</h3>
+                            <ul class="doctor-meta-list">
+                                <li>Директор клиники, главный врач, психиатр-нарколог</li>
+                                <li>Стаж работы: 17 лет</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="member-info">
-                        <span class="member-status">Клинический психолог</span>
-                        <h3 class="member-name">Ковалева Анна Ю.</h3>
-                        <p class="member-specialty">Руководитель психологической службы. Эксперт по системной семейной
-                            психотерапии и работе с созависимостью.</p>
-                        <button class="btn-member-action"
-                            onclick="document.getElementById('consultation').scrollIntoView({behavior: 'smooth'})">Записаться
-                            на прием</button>
-                    </div>
-                </article>
+
+                </div>
             </div>
+
         </div>
     </section>
-
-    <section class="reviews-section" id="reviews">
+    <section class="patient-reviews" id="patient-reviews">
         <div class="container">
-            <div class="reviews-header">
-                <div class="reviews-header-left">
-                    <h2 class="section-title">Истории <span>выздоровления</span></h2>
-                    <p class="uniqueness-desc">
-                        Искренние благодарности от тех, кто прошел путь борьбы и вернулся к полноценной жизни, а также
-                        от их семей. Из соображений конфиденциальности имена изменены.
-                    </p>
+
+            <div class="reviews-section-header">
+                <div class="reviews-header__title">
+                    <h2 class="section-title">Отзывы <span>пациентов</span></h2>
+                    <p class="section-subtitle">Честные истории людей, прошедших лечение. Отзывы публикуются с
+                        разрешения.</p>
                 </div>
-                <div class="slider-controls" style="transform: translateY(520px);">
-                    <button class="slider-btn rev-prev-btn" aria-label="Предыдущий отзыв">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="19" y1="12" x2="5" y2="12"></line>
-                            <polyline points="12 19 5 12 12 5"></polyline>
+                <div class="reviews-nav">
+                    <button type="button" class="rev-nav-btn text-prev-btn" aria-label="Назад">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </button>
-                    <button class="slider-btn rev-next-btn" aria-label="Следующий отзыв">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
+                    <span class="reviews-counter text-counter">01/03</span>
+                    <button type="button" class="rev-nav-btn text-next-btn" aria-label="Вперед">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
                         </svg>
                     </button>
                 </div>
             </div>
 
-            <div class="reviews-slider-wrapper">
-                <div class="reviews-slider">
-
-                    <div class="review-card">
-                        <div class="review-badge-row">
-                            <span class="review-role role-family">Семья пациента</span>
-                            <div class="review-rating">★★★★★</div>
+            <div class="text-reviews-slider-wrapper">
+                <div class="text-reviews-slider">
+                    <div class="review-text-card">
+                        <div class="review-card__top">
+                            <div class="review-author">
+                                <h4>АНОНИМ</h4>
+                                <span>Краснодар</span>
+                            </div>
+                            <div class="review-score">
+                                <span class="score-icon">📢</span>
+                                <div class="score-meta">
+                                    <span class="score-label">Оценка</span>
+                                    <span class="score-stars">4.7 ★★★★★</span>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="review-subject">«Вернули сына к жизни, а нам — надежду»</h3>
-                        <div class="review-text-scroll">
-                            <p class="review-text">
-                                Когда у сына начались проблемы с веществами, рушился весь наш мир. Мы обращались в
-                                разные клиники, но срывы повторялись. В центр доктора Калюжной шли со страхом и
-                                последней надеждой.
-                                Здесь совершенно другой подход — нет тюремной атмосферы, к ребятам относятся
-                                уважительно, как к личностям. Огромное спасибо Анне Юрьевне за работу созависимых групп.
-                                Мы, родители, тоже учились жить заново. Сын в ремиссии уже полтора года, устроился на
-                                работу. Низкий вам поклон!
-                            </p>
+                        <div class="review-card__body">
+                            <p class="review-excerpt">«Самое ценное – это обретённая свобода и возможность начать всё с
+                                чистого листа. Анонимность лечения позволила мне избежать ненужных переживаний и
+                                сосредоточиться на реабилитации. После выписки я чувствую себя уверенно и готов к
+                                вызовам жизни без наркотиков! Самое ценное – это об...»</p>
+                            <button type="button" class="js-expand-review" aria-label="Развернуть отзыв">
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="1 1 6 6 11 1"></polyline>
+                                </svg>
+                            </button>
                         </div>
-                        <div class="review-author">
-                            <span class="author-name">Наталья Григорьевна</span>
-                            <time class="review-time" datetime="2026-05-14">14 мая 2026</time>
-                        </div>
-                    </div>
-
-                    <div class="review-card">
-                        <div class="review-badge-row">
-                            <span class="review-role role-patient">Резидент центра</span>
-                            <div class="review-rating">★★★★★</div>
-                        </div>
-                        <h3 class="review-subject">«Профессионалы своего дела»</h3>
-                        <div class="review-text-scroll">
-                            <p class="review-text">
-                                Проходил стационарную реабилитацию и детокс у Игоря Сергеевича. До этого не верил, что
-                                смогу завязать с алкоголем. Условия отличные, чистые палаты, но главное — отношение
-                                врачей. Тебя не осуждают, а реально разбираются в внутренних причинах. Психотерапия
-                                перевернула сознание. Не пью 11 месяцев, тяги нет абсолютно. Рекомендую всем, кто
-                                отчаялся.
-                            </p>
-                        </div>
-                        <div class="review-author">
-                            <span class="author-name">Алексей, 29 лет</span>
-                            <time class="review-time" datetime="2026-04-20">20 апреля 2026</time>
+                        <div class="review-card__footer">
+                            <span class="review-date">Дата: 12.02.2026</span>
+                            <span class="review-verified">✓ Отзыв подтвержден</span>
                         </div>
                     </div>
 
-                    <div class="review-card">
-                        <div class="review-badge-row">
-                            <span class="review-role role-patient">Резидент中心</span>
-                            <div class="review-rating">★★★★★</div>
+                    <div class="review-text-card">
+                        <div class="review-card__top">
+                            <div class="review-author">
+                                <h4>АНОНИМ</h4>
+                                <span>Краснодар</span>
+                            </div>
+                            <div class="review-score">
+                                <span class="score-icon">📢</span>
+                                <div class="score-meta">
+                                    <span class="score-label">Оценка</span>
+                                    <span class="score-stars">4.7 ★★★★★</span>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="review-subject">«Полная пересборка личности»</h3>
-                        <div class="review-text-scroll">
-                            <p class="review-text">
-                                «КДК» — это не просто больница, где капают капельницы. Это настоящая школа жизни.
-                                Программа сложная, приходится много работать над собой, честно заглядывать в свои
-                                страхи. Но протоколы КПТ реально работают. Отдельное спасибо Елене Владимировне за
-                                жесткую, но честную и глубокую поддержку. Я научился ловить триггеры до того, как они
-                                начинают управлять мной. Полтора года полной трезвости.
-                            </p>
+                        <div class="review-card__body">
+                            <p class="review-excerpt">«Самое ценное – это обретённая свобода и возможность начать всё с
+                                чистого листа. Анонимность лечения позволила мне избежать ненужных переживаний и
+                                сосредоточиться на реабилитации. После выписки я чувствую себя уверенно и готов к
+                                вызовам жизни без наркотиков! Самое ценное – это об...»</p>
+                            <button type="button" class="js-expand-review" aria-label="Развернуть отзыв"></button>
                         </div>
-                        <div class="review-author">
-                            <span class="author-name">Влад М.</span>
-                            <time class="review-time" datetime="2026-03-11">11 марта 2026</time>
-                        </div>
-                    </div>
-
-                    <div class="review-card">
-                        <div class="review-badge-row">
-                            <span class="review-role role-family">Семья пациента</span>
-                            <div class="review-rating">★★★★★</div>
-                        </div>
-                        <h3 class="review-subject">«Анонимность и безопасность»</h3>
-                        <div class="review-text-scroll">
-                            <p class="review-text">
-                                Для нашей семьи ключевым моментом была полная анонимность, так как муж занимает
-                                руководящую должность крупной компании. В «КДК» все обязательства выполнили строго —
-                                никаких баз данных, никакого слива информации или учета. Лечение прошло на высшем
-                                уровне, муж кардинально изменил отношение к своему здоровью и привычкам. Атмосфера в
-                                центре бережная и конфиденциальная.
-                            </p>
-                        </div>
-                        <div class="review-author">
-                            <span class="author-name">Ольга К.</span>
-                            <time class="review-time" datetime="2026-02-28">28 февраля 2026</time>
+                        <div class="review-card__footer">
+                            <span class="review-date">Дата: 12.02.2026</span>
+                            <span class="review-verified">✓ Отзыв подтвержден</span>
                         </div>
                     </div>
 
+                    <div class="review-text-card">
+                        <div class="review-card__top">
+                            <div class="review-author">
+                                <h4>АНОНИМ</h4>
+                                <span>Краснодар</span>
+                            </div>
+                            <div class="review-score">
+                                <span class="score-icon">📢</span>
+                                <div class="score-meta">
+                                    <span class="score-label">Оценка</span>
+                                    <span class="score-stars">4.7 ★★★★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-card__body">
+                            <p class="review-excerpt">«Самое ценное – это обретённая свобода и возможность начать всё с
+                                чистого листа. Анонимность лечения позволила мне избежать ненужных переживаний и
+                                сосредоточиться на реабилитации. После выписки я чувствую себя уверенно и готов к
+                                вызовам жизни без наркотиков! Самое ценное – это об...»</p>
+                            <button type="button" class="js-expand-review" aria-label="Развернуть отзыв"></button>
+                        </div>
+                        <div class="review-card__footer">
+                            <span class="review-date">Дата: 12.02.2026</span>
+                            <span class="review-verified">✓ Отзыв подтвержден</span>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <div class="audio-reviews-section">
+                <div class="audio-section-nav">
+                    <button type="button" class="rev-nav-btn audio-prev-btn" aria-label="Назад">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <span class="reviews-counter audio-counter">01/03</span>
+                    <button type="button" class="rev-nav-btn audio-next-btn" aria-label="Вперед">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="audio-reviews-slider-wrapper">
+                    <div class="audio-reviews-slider">
+
+                        <div class="review-audio-card">
+                            <div class="audio-card__top">
+                                <div class="audio-author">
+                                    <h4>АНОНИМ</h4>
+                                    <span>Алкоголизм</span>
+                                </div>
+                                <div class="audio-duration">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                    <span class="js-audio-time">01:24</span>
+                                </div>
+                            </div>
+
+                            <div class="audio-player-container">
+                                <audio src="content/audio1.mp3" class="js-main-audio"></audio>
+                                <button type="button" class="audio-play-trigger js-audio-play"
+                                    aria-label="Воспроизвести">
+                                    <svg class="play-icon" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                    <svg class="pause-icon hidden" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                                    </svg>
+                                </button>
+
+                                <div class="audio-wave-container js-wave-timeline">
+                                    <div class="audio-wave-bars">
+                                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                    <div class="audio-wave-progress js-wave-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-audio-card">
+                            <div class="audio-card__top">
+                                <div class="audio-author">
+                                    <h4>АНОНИМ</h4>
+                                    <span>Алкоголизм</span>
+                                </div>
+                                <div class="audio-duration">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                    <span class="js-audio-time">01:24</span>
+                                </div>
+                            </div>
+                            <div class="audio-player-container">
+                                <audio src="content/audio2.mp3" class="js-main-audio"></audio>
+                                <button type="button" class="audio-play-trigger js-audio-play">
+                                    <svg class="play-icon" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                    <svg class="pause-icon hidden" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                                    </svg>
+                                </button>
+                                <div class="audio-wave-container js-wave-timeline">
+                                    <div class="audio-wave-bars">
+                                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                    <div class="audio-wave-progress js-wave-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-audio-card">
+                            <div class="audio-card__top">
+                                <div class="audio-author">
+                                    <h4>АНОНИМ</h4>
+                                    <span>Алкоголизм</span>
+                                </div>
+                                <div class="audio-duration">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                    <span class="js-audio-time">01:24</span>
+                                </div>
+                            </div>
+                            <div class="audio-player-container">
+                                <audio src="content/audio3.mp3" class="js-main-audio"></audio>
+                                <button type="button" class="audio-play-trigger js-audio-play">
+                                    <svg class="play-icon" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                    <svg class="pause-icon hidden" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                                    </svg>
+                                </button>
+                                <div class="audio-wave-container js-wave-timeline">
+                                    <div class="audio-wave-bars">
+                                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                    <div class="audio-wave-progress js-wave-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 

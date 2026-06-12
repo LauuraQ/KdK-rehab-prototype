@@ -18,11 +18,14 @@
 <body>
     <header class="site-header" data-include="header"></header>
 
+
+
+
     <section class="alcoholism-treatment-section">
         <div class="container">
             <div class="treatment-header">
                 <h1 class="section-title">Лечение алкоголизма в <span>Ростове-на-Дону</span></h1>
-                <p class="treatment-subtitle">Клинический суверенитет, научно обоснованная терапия и возвращение
+                <p class="methodology__subtitle">Клинический суверенитет, научно обоснованная терапия и возвращение
                     личности в
                     закрытом стационаре «КдК Рехаб».
                 </p>
@@ -44,6 +47,392 @@
                         приносят долгосрочного результата и лишь усугубляют клиническую картину.
                     </p>
                 </div>
+
+
+                <section class="quiz-section" id="quiz-section">
+                    <div class="container">
+                        <h2 class="section-title">Узнайте шансы на <span>стойкую ремиссию</span>
+                        </h2>
+                        <p class="methodology__subtitle">Ответьте на 4 простых вопроса клинического теста, чтобы
+                            зафиксировать скидку 10% и получить расчет стоимости терапевтической программы</p>
+
+                        <div class="quiz-wrapper">
+                            <div class="quiz-body">
+                                <div class="quiz-progress">
+                                    <span class="quiz-progress__text">Анализ ситуации: шаг <strong
+                                            id="quiz-current-step">1</strong> из 4</span>
+                                    <div class="quiz-progress__bar">
+                                        <div class="quiz-progress__fill" id="quiz-progress-fill" style="width: 25%;">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <form id="rehab-quiz-form" onsubmit="return false;">
+
+                                    <div class="quiz-step active" data-step="1">
+                                        <h3 class="quiz-step__question">1. Какой примерный стаж употребления у
+                                            зависимого?</h3>
+                                        <div class="quiz-options">
+                                            <label class="quiz-option">
+                                                <input type="radio" name="usage_duration" value="До 6 месяцев" checked>
+                                                <span class="quiz-option__box"></span>
+                                                <span class="quiz-option__text">До 6 месяцев (начальная стадия)</span>
+                                            </label>
+                                            <label class="quiz-option">
+                                                <input type="radio" name="usage_duration" value="От 6 месяцев до 2 лет">
+                                                <span class="quiz-option__box"></span>
+                                                <span class="quiz-option__text">От 6 месяцев до 2 лет</span>
+                                            </label>
+                                            <label class="quiz-option">
+                                                <input type="radio" name="usage_duration" value="От 2 до 5 лет">
+                                                <span class="quiz-option__box"></span>
+                                                <span class="quiz-option__text">От 2 до 5 лет (сформированная
+                                                    зависимость)</span>
+                                            </label>
+                                            <label class="quiz-option">
+                                                <input type="radio" name="usage_duration" value="Более 5 лет">
+                                                <span class="quiz-option__box"></span>
+                                                <span class="quiz-option__text">Более 5 лет / Хроническое течение</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="quiz-step" data-step="2">
+                                        <h3 class="quiz-step__question">2. Каковы основные проявления деструктивного
+                                            поведения?</h3>
+                                        <div class="quiz-options">
+                                            <label class="quiz-option">
+                                                <input type="radio" name="behavior" value="Агрессия и отрицание">
+                                                <span class="quiz-option__box"></span>
+                                                <span class="quiz-option__text">Проявляет агрессию, полностью отрицает
+                                                    проблему</span>
+                                            </label>
+                                            <label class="quiz-option">
+                                                <input type="radio" name="behavior" value="Скрытность и изоляция">
+                                                <span class="quiz-option__box"></span>
+                                                <span class="quiz-option__text">Замкнулся в себе, скрывает употребление,
+                                                    выносит вещи</span>
+                                            </label>
+                                            <label class="quiz-option">
+                                                <input type="radio" name="behavior" value="Ложные обещания бросить">
+                                                <span class="quiz-option__box"></span>
+                                                <span class="quiz-option__text">Признает вину во время кризиса, но
+                                                    срывается через пару дней</span>
+                                            </label>
+                                            <label class="quiz-option">
+                                                <input type="radio" name="behavior" value="Острые физические состояния">
+                                                <span class="quiz-option__box"></span>
+                                                <span class="quiz-option__text">Находится в затяжном запое / выраженном
+                                                    абстинентном синдроме</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="quiz-step" data-step="3">
+                                        <h3 class="quiz-step__question">3. Рассматривает ли человек возможность
+                                            обращения к врачам?</h3>
+                                        <div class="quiz-options">
+                                            <label class="quiz-option">
+                                                <input type="radio" name="readiness" value="Категорически против">
+                                                <span class="quiz-option__box"></span>
+                                                <span class="quiz-option__text">Категорически против, любые разговоры
+                                                    вызывают скандал</span>
+                                            </label>
+                                            <label class="quiz-option">
+                                                <input type="radio" name="readiness" value="Колеблется">
+                                                <span class="quiz-option__box"></span>
+                                                <span class="quiz-option__text">Сомневается, но готов пообщаться с
+                                                    независимым экспертом</span>
+                                            </label>
+                                            <label class="quiz-option">
+                                                <input type="radio" name="readiness" value="Да, хочет вылечиться">
+                                                <span class="quiz-option__box"></span>
+                                                <span class="quiz-option__text">Да, осознает дно ситуации и просит о
+                                                    помощи</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="quiz-step" data-step="4">
+                                        <h3 class="quiz-step__question quiz-step__question--final">Анализ завершен.
+                                            Результаты сформированы</h3>
+
+                                        <div class="quiz-results-preview">
+                                            <div class="result-badge">Прогноз ремиссии: <span
+                                                    id="quiz-dynamic-prognosis">Высокий (при своевременной
+                                                    интервенции)</span></div>
+                                            <ul class="result-bullets">
+                                                <li>Подготовлен расчет стоимости детоксикации и реабилитации;</li>
+                                                <li>Сформирован пошаговый алгоритм убеждения для госпитализации;</li>
+                                                <li>Закреплена скидка 10% на первый месяц пребывания в стационаре.</li>
+                                            </ul>
+                                        </div>
+
+                                        <p class="quiz-step__descr">Укажите номер телефона, привязанный к мессенджерам,
+                                            для получения полной программы и сметы расходов:</p>
+
+                                        <div class="quiz-form-fields">
+                                            <div class="form-field">
+                                                <input type="text" name="quiz_name" placeholder="Ваше имя" required>
+                                            </div>
+                                            <div class="form-field">
+                                                <input type="tel" name="quiz_phone" placeholder="+7 (999) 999-99-99"
+                                                    required>
+                                            </div>
+
+                                            <button type="submit" class="quiz-submit-btn">Получить результаты
+                                                теста</button>
+
+                                            <p class="quiz-privacy">Вся информация строго конфиденциальна. Данные
+                                                защищены медицинской тайной и не передаются третьим лицам.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="quiz-nav">
+                                        <button type="button" class="quiz-nav-btn quiz-nav-btn--prev" id="quiz-btn-prev"
+                                            disabled>Назад</button>
+                                        <button type="button" class="quiz-nav-btn quiz-nav-btn--next"
+                                            id="quiz-btn-next">Далее</button>
+                                    </div>
+
+                                </form>
+                            </div>
+
+                            <div class="quiz-sidebar">
+                                <div class="sidebar-calc">
+                                    <h4 class="sidebar-calc__title">Калькулятор параметров:</h4>
+
+                                    <div class="sidebar-calc__item">
+                                        <span class="calc-label">Сложность клинического случая:</span>
+                                        <div class="calc-status-bar">
+                                            <div class="calc-status-fill" id="calc-status-level"
+                                                style="width: 25%; background-color: #10B981;"></div>
+                                        </div>
+                                        <span class="calc-value" id="calc-status-text">Начальная</span>
+                                    </div>
+
+                                    <div class="sidebar-calc__item">
+                                        <span class="calc-label">Рекомендованный режим:</span>
+                                        <span class="calc-value-accent" id="calc-regimen-text">Амбулаторный /
+                                            Экспресс-вытрезвление</span>
+                                    </div>
+
+                                    <div class="sidebar-calc__item">
+                                        <span class="calc-label">Доступная льгота:</span>
+                                        <span class="calc-value-bonus">-10% на стационар</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section class="pricing-packages" id="pricing-packages">
+                    <div class="container">
+                        <h2 class="section-title">Пакетные предложения и <span>комплексные программы</span></h2>
+                        <p class="pricing-packages__subtitle">Фиксированная стоимость без скрытых платежей. Выберите
+                            оптимальный
+                            курс реабилитации.</p>
+
+                        <div class="pricing-packages__grid">
+
+                            <div class="package-card">
+                                <div class="package-card__header">
+                                    <h3 class="package-card__name">Базовый курс</h3>
+                                    <div class="package-card__price">от 3 500 ₽ <span>/ сутки</span></div>
+                                </div>
+                                <ul class="package-card__list">
+                                    <li>Проживание в 4-местной комфортной палате</li>
+                                    <li>4-разовое сбалансированное питание</li>
+                                    <li>Медикаментозное снятие абстиненции (капельницы)</li>
+                                    <li>Групповая терапия по программе «12 шагов»</li>
+                                    <li>Базовый осмотр профильных врачей</li>
+                                    <li>Круглосуточное наблюдение персонала</li>
+                                </ul>
+                                <div class="package-card__footer">
+                                    <a href="#consultation" class="btn-package">Выбрать программу</a>
+                                </div>
+                            </div>
+
+                            <div class="package-card package-card--popular">
+                                <div class="package-card__badge">Рекомендуем</div>
+                                <div class="package-card__header">
+                                    <h3 class="package-card__name">Интенсивный курс</h3>
+                                    <div class="package-card__price">от 5 000 ₽ <span>/ сутки</span></div>
+                                </div>
+                                <ul class="package-card__list">
+                                    <li>Проживание в 2-местной уютной палате</li>
+                                    <li>Индивидуальное диетическое меню</li>
+                                    <li>Индивидуальные сессии с психотерапевтом (2 раза в неделю)</li>
+                                    <li>Глубокая проработка по методикам КПТ, Дейтоп и 7N</li>
+                                    <li>Бесплатные группы поддержки для созависимых родственников</li>
+                                    <li>Полный курс ресоциализации и помощь в поиске работы</li>
+                                    <li><strong>Гарантия от срыва по договору</strong></li>
+                                </ul>
+                                <div class="package-card__footer">
+                                    <a href="#consultation" class="btn-package btn-package--popular">Оформить курс</a>
+                                </div>
+                            </div>
+
+                            <div class="package-card">
+                                <div class="package-card__header">
+                                    <h3 class="package-card__name">VIP-реабилитация</h3>
+                                    <div class="package-card__price">от 9 500 ₽ <span>/ сутки</span></div>
+                                </div>
+                                <ul class="package-card__list">
+                                    <li>Размещение в одноместном VIP-люксе</li>
+                                    <li>Индивидуальный план питания и ресторанный сервис</li>
+                                    <li>Ежедневная личная психотерапия и трансактный анализ</li>
+                                    <li>Персональный куратор-психолог на связи 24/7</li>
+                                    <li>Полная конфиденциальность премиум-уровня</li>
+                                    <li>Доступ к расширенной спортивной и SPA-инфраструктуре</li>
+                                    <li>Пожизненное VIP-сопровождение после выписки</li>
+                                </ul>
+                                <div class="package-card__footer">
+                                    <a href="#consultation" class="btn-package">Узнать подробнее</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="legal-guarantees" id="legal-guarantees">
+                    <div class="container">
+                        <h2 class="section-title">Почему нам доверяют самое дорогое: <br><span>гарантии
+                                безопасности</span></h2>
+                        <p class="methodology__subtitle">Защищаем здоровье пациента, ваши финансы и репутацию семьи на
+                            юридическом
+                            уровне
+                        </p>
+
+                        <div class="guarantees-grid">
+
+                            <div class="guarantee-card guarantee-card--accent">
+                                <div class="guarantee-card__icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                        <polyline points="9 11 11 13 15 9" />
+                                    </svg>
+                                </div>
+                                <h3>Официальная гарантия от срыва</h3>
+                                <p>Если после прохождения полного рекомендованного курса реабилитации у пациента
+                                    случается рецидив,
+                                    <strong>мы берем его на повторный курс полностью за счет клиники</strong>. Это
+                                    условие
+                                    официально зафиксировано в юридическом договоре.
+                                </p>
+                            </div>
+
+                            <div class="guarantee-card">
+                                <div class="guarantee-card__icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                                    </svg>
+                                </div>
+                                <h3>Полная анонимность без последствий</h3>
+                                <p>Мы являемся частным учреждением. Никаких наркологических учетов, передач списков в
+                                    полицию или по
+                                    месту работы. Человек полностью сохраняет чистую репутацию, водительские права и
+                                    возможность
+                                    занимать любые должности.</p>
+                            </div>
+
+                            <div class="guarantee-card">
+                                <div class="guarantee-card__icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg>
+                                </div>
+                                <h3>Уважение и человечность</h3>
+                                <p>У нас полностью исключены методы «советской» карательной медицины, жесткое
+                                    принуждение или
+                                    унижение человеческого достоинства. Мы видим в пациенте личность, которая оступилась
+                                    и
+                                    запуталась, и помогаем ей подняться.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="conditions" id="conditions">
+                    <div class="container">
+                        <h2 class="section-title">Условия проживания в <span>реабилитационном центре</span></h2>
+                        <p class="conditions__subtitle">Закрытая охраняемая территория, домашний уют и полноценная
+                            инфраструктура
+                            для восстановления.</p>
+
+                        <div class="conditions__grid">
+
+                            <div class="condition-card">
+                                <div class="condition-card__icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                    </svg>
+                                </div>
+                                <h3 class="condition-card__caption">Комфортные палаты</h3>
+                                <p class="condition-card__text">Уютные 2-4 местные комнаты, оснащенные сплит-системами,
+                                    собственным
+                                    санузлом и ортопедическими матрасами для здорового сна.</p>
+                            </div>
+
+                            <div class="condition-card">
+                                <div class="condition-card__icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="condition-card__caption">4-разовое питание</h3>
+                                <p class="condition-card__text">Сбалансированное здоровое питание. Меню разработано
+                                    диетологом для
+                                    быстрого физического восстановления организма.</p>
+                            </div>
+
+                            <div class="condition-card">
+                                <div class="condition-card__icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z">
+                                        </path>
+                                        <line x1="6" y1="1" x2="6" y2="4"></line>
+                                        <line x1="10" y1="1" x2="10" y2="4"></line>
+                                        <line x1="14" y1="1" x2="14" y2="4"></line>
+                                    </svg>
+                                </div>
+                                <h3 class="condition-card__caption">Спортивные зоны</h3>
+                                <p class="condition-card__text">Тренажерный зал, оборудованные площадки на свежем
+                                    воздухе для
+                                    игровых видов спорта, а также собственная баня/сауна.</p>
+                            </div>
+
+                            <div class="condition-card">
+                                <div class="condition-card__icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="condition-card__caption">Безопасность 24/7</h3>
+                                <p class="condition-card__text">Круглосуточное наблюдение, военизированная охрана
+                                    территории и
+                                    полное, строгое отсутствие доступа к любым запрещенным веществам.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="conditions__gallery">
+                            <div class="conditions__photo-placeholder"><span>Фото комнат</span></div>
+                            <div class="conditions__photo-placeholder"><span>Фото территории</span></div>
+                            <div class="conditions__photo-placeholder"><span>Фото спортзала</span></div>
+                        </div>
+                    </div>
+                </section>
                 <h2>Нейробиологические механизмы формирования <span>алкогольной патологии</span></h2>
                 <p>Чтобы понять, почему бытовые методы лечения оказываются неэффективными, необходимо декомпозировать
                     механизмы влияния этанола на центральную нервную систему. На начальных этапах употребления алкоголь
@@ -167,6 +556,7 @@
                     работа
                     клинических психологов.
                 </p>
+
                 <p>Мы используем интегративную модель, включающую когнитивно-поведенческую и гештальт-терапию.
                     Специалисты
                     учат пациента распознавать предвестники срыва — так называемые "тяговые" мысли, которые умеют
@@ -174,6 +564,82 @@
                     маскироваться под обычную усталость или бытовое раздражение. Человек заново учится проживать свои
                     эмоции, выстраивать личные границы и находить внутренние опоры в трезвой жизни.
                 </p>
+                <section class="transformation-stages" id="transformation-stages">
+                    <div class="container">
+                        <h2 class="section-title">Этапа трансформации личности в <span>клинике доктора Калюжной</span>
+                        </h2>
+                        <p class="methodology__subtitle">Реабилитация — это упорный, пошаговый процесс. Мы ломаем
+                            глубинные
+                            механизмы зависимости на каждом уровне.</p>
+
+                        <div class="stages-timeline">
+
+                            <div class="stage-card">
+                                <div class="stage-card__number">01</div>
+                                <div class="stage-card__content">
+                                    <h3>Период адаптации и стабилизации</h3>
+                                    <p>В первые дни мы мягко помогаем человеку пережить физическую тягу, купируем
+                                        абстинентный синдром и восстанавливаем биохимические процессы. Главная задача
+                                        этого шага — стабилизировать эмоциональный фон, нормализовать сон и снять
+                                        первичную тревожность.</p>
+                                </div>
+                            </div>
+
+                            <div class="stage-card">
+                                <div class="stage-card__number">02</div>
+                                <div class="stage-card__content">
+                                    <h3>Интеграция в терапевтическую среду</h3>
+                                    <p>Ключевой этап глубокой проработки. Находясь в изолированном пространстве среди
+                                        тех, кто тоже преодолевает недуг, и под руководством опытных наставников,
+                                        пациент учится видеть свои манипуляции. Здесь он берет ответственность за свои
+                                        поступки и прорабатывает детские травмы или обиды, которые ранее толкали его к
+                                        деструктивному поведению.</p>
+                                </div>
+                            </div>
+
+                            <div class="stage-card">
+                                <div class="stage-card__number">03</div>
+                                <div class="stage-card__content">
+                                    <h3>Подготовка к выходу в социум</h3>
+                                    <p>Заключительный этап — ресоциализация. Мы не бросаем своих выпускников после
+                                        выписки. Психологи помогают им плавно адаптироваться в реальном мире,
+                                        выстраивать новые трезвые границы, восстанавливать отношения с семьей и
+                                        выдерживать стрессы на работе без срывов.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="video-expert-section" id="video-expert-section">
+                    <div class="container">
+                        <h2 class="section-title">Почему классические методы лечения зависимости <span>не
+                                работают?</span></h2>
+                        <p class="methodology__subtitle">Короткое разбор-видео от ведущего нарколога клиники о том, как
+                            заставить близкого человека осознать проблему без скандалов и угроз.</p>
+                        <div class="video-expert-wrapper">
+
+                            <div class="expert-video-block">
+                                <div class="video-cover-preview js-video-wrapper">
+                                    <div class="video-poster-bg"></div>
+
+                                    <button type="button" class="video-play-btn js-start-expert-video"
+                                        aria-label="Смотреть видео">
+                                        <svg width="20" height="24" viewBox="0 0 24 28" fill="currentColor">
+                                            <path d="M24 14L0 28V0L24 14Z" />
+                                        </svg>
+                                    </button>
+
+                                    <video src="content/expert-problem-video.mp4" class="js-expert-video-element"
+                                        controls></video>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>
                 <h2>Терапевтическое сообщество как <span>инструмент преодоления социальной изоляции</span></h2>
                 <p>Важной частью психологического выздоровления в стационаре «КдК Рехаб» являются групповые занятия.
                     Зависимый человек годами живет в состоянии глубокого одиночества и изоляции, будучи уверенным, что
@@ -221,6 +687,160 @@
                     помогаем
                     восстановить разрушенное доверие между поколениями.
                 </p>
+
+                <section class="clinic-doctors" id="clinic-doctors">
+                    <div class="container">
+
+                        <div class="doctors-header">
+                            <div class="doctors-header__title">
+                                <h2 class="section-title">Врачи <span>клиники</span></h2>
+                                <p class="methodology__subtitle">Реальные специалисты с подтвержденным опытом, стажем и
+                                    дипломами</p>
+                            </div>
+                            <div class="doctors-nav">
+                                <button type="button" class="doc-nav-btn doc-prev-btn" aria-label="Назад">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="15 18 9 12 15 6"></polyline>
+                                    </svg>
+                                </button>
+                                <span class="doctors-counter">01/03</span>
+                                <button type="button" class="doc-nav-btn doc-next-btn" aria-label="Вперед">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="doctors-slider-wrapper">
+                            <div class="doctors-slider">
+
+                                <div class="doctor-card">
+                                    <div class="doctor-card__image-box">
+                                        <div class="doctor-photo-placeholder"></div>
+
+                                        <div class="video-badge">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M23 12l-22 12v-24z" />
+                                            </svg>
+                                            Видеовизитка
+                                        </div>
+
+                                        <div class="doctor-rating-row">
+                                            <div class="rating-badge">
+                                                <span class="rating-plus">+</span>
+                                                <div class="rating-meta">
+                                                    <span class="rating-num">4.7</span>
+                                                    <span class="rating-stars">★★★★★</span>
+                                                    <a href="#reviews" class="rating-link">Читать 47 отзывов</a>
+                                                </div>
+                                            </div>
+                                            <div class="rating-badge">
+                                                <span class="rating-speaker">📢</span>
+                                                <div class="rating-meta">
+                                                    <span class="rating-num">4.7</span>
+                                                    <span class="rating-stars">★★★★★</span>
+                                                    <a href="#reviews" class="rating-link">Читать 47 отзывов</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="doctor-card__info">
+                                        <h3>Калюжная Марина<br>Александровна</h3>
+                                        <ul class="doctor-meta-list">
+                                            <li>Директор клиники, главный врач, психиатр-нарколог</li>
+                                            <li>Стаж работы: 17 лет</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="doctor-card">
+                                    <div class="doctor-card__image-box">
+                                        <div class="doctor-photo-placeholder"></div>
+
+                                        <div class="video-badge">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M23 12l-22 12v-24z" />
+                                            </svg>
+                                            Видеовизитка
+                                        </div>
+
+                                        <div class="doctor-rating-row">
+                                            <div class="rating-badge">
+                                                <span class="rating-plus">+</span>
+                                                <div class="rating-meta">
+                                                    <span class="rating-num">4.7</span>
+                                                    <span class="rating-stars">★★★★★</span>
+                                                    <a href="#reviews" class="rating-link">Читать 47 отзывов</a>
+                                                </div>
+                                            </div>
+                                            <div class="rating-badge">
+                                                <span class="rating-speaker">📢</span>
+                                                <div class="rating-meta">
+                                                    <span class="rating-num">4.7</span>
+                                                    <span class="rating-stars">★★★★★</span>
+                                                    <a href="#reviews" class="rating-link">Читать 47 отзывов</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="doctor-card__info">
+                                        <h3>Калюжная Марина<br>Александровна</h3>
+                                        <ul class="doctor-meta-list">
+                                            <li>Директор клиники, главный врач, психиатр-нарколог</li>
+                                            <li>Стаж работы: 17 лет</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="doctor-card">
+                                    <div class="doctor-card__image-box">
+                                        <div class="doctor-photo-placeholder"></div>
+
+                                        <div class="video-badge">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M23 12l-22 12v-24z" />
+                                            </svg>
+                                            Видеовизитка
+                                        </div>
+
+                                        <div class="doctor-rating-row">
+                                            <div class="rating-badge">
+                                                <span class="rating-plus">+</span>
+                                                <div class="rating-meta">
+                                                    <span class="rating-num">4.7</span>
+                                                    <span class="rating-stars">★★★★★</span>
+                                                    <a href="#reviews" class="rating-link">Читать 47 отзывов</a>
+                                                </div>
+                                            </div>
+                                            <div class="rating-badge">
+                                                <span class="rating-speaker">📢</span>
+                                                <div class="rating-meta">
+                                                    <span class="rating-num">4.7</span>
+                                                    <span class="rating-stars">★★★★★</span>
+                                                    <a href="#reviews" class="rating-link">Читать 47 отзывов</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="doctor-card__info">
+                                        <h3>Калюжная Марина<br>Александровна</h3>
+                                        <ul class="doctor-meta-list">
+                                            <li>Директор клиники, главный врач, психиатр-нарколог</li>
+                                            <li>Стаж работы: 17 лет</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
                 <h2>Принципы абсолютной анонимности и <span>юридической безопасности клиентов</span></h2>
                 <p>Обращение за наркологической помощью всегда сопряжено со страхом огласки. Многие люди до последнего
                     оттягивают визит к врачу, боясь, что информация дойдет до руководства на работе, соседей или
@@ -251,6 +871,480 @@
             </article>
         </div>
     </section>
+    <section class="guarantees" id="guarantees">
+        <div class="container">
+            <h2 class="section-title">Официальные лицензии и <span>гарантии результата</span></h2>
+
+            <div class="guarantees__row">
+
+                <div class="guarantees__content">
+                    <p class="guarantees__intro">Мы работаем строго в правовом и медицинском поле. Каждому клиенту
+                        предоставляется:</p>
+
+                    <div class="guarantees__list">
+
+                        <div class="guarantee-item">
+                            <div class="guarantee-item__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </div>
+                            <div class="guarantee-item__text">
+                                <h3 class="guarantee-item__caption">Официальный договор</h3>
+                                <p class="guarantee-item__desc">Полная фиксация стоимости лечения. Никаких скрытых
+                                    платежей, доплат за медикаменты или неожиданных расходов в процессе прохождения
+                                    курса.</p>
+                            </div>
+                        </div>
+
+                        <div class="guarantee-item">
+                            <div class="guarantee-item__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                            </div>
+                            <div class="guarantee-item__text">
+                                <h3 class="guarantee-item__caption">Гарантия от срыва</h3>
+                                <p class="guarantee-item__desc">Если пациент полностью прошел рекомендованный курс
+                                    реабилитации и ресоциализации, но произошел рецидив — повторный курс мы проводим
+                                    бесплатно.</p>
+                            </div>
+                        </div>
+
+                        <div class="guarantee-item">
+                            <div class="guarantee-item__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                            </div>
+                            <div class="guarantee-item__text">
+                                <h3 class="guarantee-item__caption">Лицензии Минздрава</h3>
+                                <p class="guarantee-item__desc">Вся деятельность центра сертифицирована. Ознакомьтесь с
+                                    нашими разрешительными документами на ведение медицинской и реабилитационной
+                                    деятельности.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="guarantees__docs">
+                    <div class="guarantees__doc-placeholder"><span>Скан лицензии 1</span></div>
+                    <div class="guarantees__doc-placeholder"><span>Скан лицензии 2</span></div>
+                </div>
+
+            </div>
+
+            <div class="license-verification-block" style="margin-top: 80px;">
+                <div class="verification-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        <polyline points="9 11 11 13 15 9"></polyline>
+                    </svg>
+                </div>
+                <div class="verification-content">
+                    <p class="verification-text">
+                        Вы можете самостоятельно проверить статус нашей лицензии в едином реестре Росздравнадзора.
+                        Для этого скопируйте номер <code class="license-copy-number" title="Нажмите, чтобы выделить"
+                            onclick="window.getSelection().selectAllChildren(this)">Л041-01126-23/00345612</code> и
+                        вставьте его в поле поиска на официальном сайте ведомства.
+                    </p>
+                    <a href="https://roszdravnadzor.gov.ru/services/licenses" target="_blank" rel="noopener nofollow"
+                        class="verification-link">
+                        Проверить на официальном сайте Росздравнадзора
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="patient-reviews" id="patient-reviews">
+        <div class="container">
+
+            <div class="reviews-section-header">
+                <div class="reviews-header__title">
+                    <h2 class="section-title">Отзывы <span>пациентов</span></h2>
+                    <p class="section-subtitle">Честные истории людей, прошедших лечение. Отзывы публикуются с
+                        разрешения.</p>
+                </div>
+                <div class="reviews-nav">
+                    <button type="button" class="rev-nav-btn text-prev-btn" aria-label="Назад">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <span class="reviews-counter text-counter">01/03</span>
+                    <button type="button" class="rev-nav-btn text-next-btn" aria-label="Вперед">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="text-reviews-slider-wrapper">
+                <div class="text-reviews-slider">
+                    <div class="review-text-card">
+                        <div class="review-card__top">
+                            <div class="review-author">
+                                <h4>АНОНИМ</h4>
+                                <span>Краснодар</span>
+                            </div>
+                            <div class="review-score">
+                                <span class="score-icon">📢</span>
+                                <div class="score-meta">
+                                    <span class="score-label">Оценка</span>
+                                    <span class="score-stars">4.7 ★★★★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-card__body">
+                            <p class="review-excerpt">«Самое ценное – это обретённая свобода и возможность начать всё с
+                                чистого листа. Анонимность лечения позволила мне избежать ненужных переживаний и
+                                сосредоточиться на реабилитации. После выписки я чувствую себя уверенно и готов к
+                                вызовам жизни без наркотиков! Самое ценное – это об...»</p>
+                            <button type="button" class="js-expand-review" aria-label="Развернуть отзыв">
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="1 1 6 6 11 1"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="review-card__footer">
+                            <span class="review-date">Дата: 12.02.2026</span>
+                            <span class="review-verified">✓ Отзыв подтвержден</span>
+                        </div>
+                    </div>
+
+                    <div class="review-text-card">
+                        <div class="review-card__top">
+                            <div class="review-author">
+                                <h4>АНОНИМ</h4>
+                                <span>Краснодар</span>
+                            </div>
+                            <div class="review-score">
+                                <span class="score-icon">📢</span>
+                                <div class="score-meta">
+                                    <span class="score-label">Оценка</span>
+                                    <span class="score-stars">4.7 ★★★★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-card__body">
+                            <p class="review-excerpt">«Самое ценное – это обретённая свобода и возможность начать всё с
+                                чистого листа. Анонимность лечения позволила мне избежать ненужных переживаний и
+                                сосредоточиться на реабилитации. После выписки я чувствую себя уверенно и готов к
+                                вызовам жизни без наркотиков! Самое ценное – это об...»</p>
+                            <button type="button" class="js-expand-review" aria-label="Развернуть отзыв"></button>
+                        </div>
+                        <div class="review-card__footer">
+                            <span class="review-date">Дата: 12.02.2026</span>
+                            <span class="review-verified">✓ Отзыв подтвержден</span>
+                        </div>
+                    </div>
+
+                    <div class="review-text-card">
+                        <div class="review-card__top">
+                            <div class="review-author">
+                                <h4>АНОНИМ</h4>
+                                <span>Краснодар</span>
+                            </div>
+                            <div class="review-score">
+                                <span class="score-icon">📢</span>
+                                <div class="score-meta">
+                                    <span class="score-label">Оценка</span>
+                                    <span class="score-stars">4.7 ★★★★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-card__body">
+                            <p class="review-excerpt">«Самое ценное – это обретённая свобода и возможность начать всё с
+                                чистого листа. Анонимность лечения позволила мне избежать ненужных переживаний и
+                                сосредоточиться на реабилитации. После выписки я чувствую себя уверенно и готов к
+                                вызовам жизни без наркотиков! Самое ценное – это об...»</p>
+                            <button type="button" class="js-expand-review" aria-label="Развернуть отзыв"></button>
+                        </div>
+                        <div class="review-card__footer">
+                            <span class="review-date">Дата: 12.02.2026</span>
+                            <span class="review-verified">✓ Отзыв подтвержден</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="audio-reviews-section">
+                <div class="audio-section-nav">
+                    <button type="button" class="rev-nav-btn audio-prev-btn" aria-label="Назад">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <span class="reviews-counter audio-counter">01/03</span>
+                    <button type="button" class="rev-nav-btn audio-next-btn" aria-label="Вперед">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="audio-reviews-slider-wrapper">
+                    <div class="audio-reviews-slider">
+
+                        <div class="review-audio-card">
+                            <div class="audio-card__top">
+                                <div class="audio-author">
+                                    <h4>АНОНИМ</h4>
+                                    <span>Алкоголизм</span>
+                                </div>
+                                <div class="audio-duration">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                    <span class="js-audio-time">01:24</span>
+                                </div>
+                            </div>
+
+                            <div class="audio-player-container">
+                                <audio src="content/audio1.mp3" class="js-main-audio"></audio>
+                                <button type="button" class="audio-play-trigger js-audio-play"
+                                    aria-label="Воспроизвести">
+                                    <svg class="play-icon" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                    <svg class="pause-icon hidden" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                                    </svg>
+                                </button>
+
+                                <div class="audio-wave-container js-wave-timeline">
+                                    <div class="audio-wave-bars">
+                                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                    <div class="audio-wave-progress js-wave-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-audio-card">
+                            <div class="audio-card__top">
+                                <div class="audio-author">
+                                    <h4>АНОНИМ</h4>
+                                    <span>Алкоголизм</span>
+                                </div>
+                                <div class="audio-duration">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                    <span class="js-audio-time">01:24</span>
+                                </div>
+                            </div>
+                            <div class="audio-player-container">
+                                <audio src="content/audio2.mp3" class="js-main-audio"></audio>
+                                <button type="button" class="audio-play-trigger js-audio-play">
+                                    <svg class="play-icon" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                    <svg class="pause-icon hidden" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                                    </svg>
+                                </button>
+                                <div class="audio-wave-container js-wave-timeline">
+                                    <div class="audio-wave-bars">
+                                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                    <div class="audio-wave-progress js-wave-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-audio-card">
+                            <div class="audio-card__top">
+                                <div class="audio-author">
+                                    <h4>АНОНИМ</h4>
+                                    <span>Алкоголизм</span>
+                                </div>
+                                <div class="audio-duration">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                    <span class="js-audio-time">01:24</span>
+                                </div>
+                            </div>
+                            <div class="audio-player-container">
+                                <audio src="content/audio3.mp3" class="js-main-audio"></audio>
+                                <button type="button" class="audio-play-trigger js-audio-play">
+                                    <svg class="play-icon" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                    <svg class="pause-icon hidden" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                                    </svg>
+                                </button>
+                                <div class="audio-wave-container js-wave-timeline">
+                                    <div class="audio-wave-bars">
+                                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                    <div class="audio-wave-progress js-wave-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="clinic-faq" id="clinic-faq">
+        <div class="container">
+            <h2 class="section-title">Часто задаваемые <span>вопросы</span></h2>
+            <p class="methodology__subtitle">Ответы главного нарколога клиники на самые частые вопросы родственников о
+                процессе реабилитации</p>
+
+            <div class="faq-accordion">
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>1. Какова реальная длительность курса реабилитации?</span>
+                        <div class="faq-chevron"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Эффективный курс реабилитации занимает от 3 до 6 месяцев в стационаре. Зависимость
+                            формируется годами, разрушая нейронные связи и психику, поэтому восстановить личность за
+                            пару недель невозможно. Сроки подбираются индивидуально на основе стажа употребления и
+                            тяжести ПАВ.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>2. Что делать, если зависимый категорически отказывается от лечения?</span>
+                        <div class="faq-chevron"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Более 80% пациентов поступают к нам без изначального желания. Мы используем метод интервенции
+                            — это безопасный психологический заезд мотивационной бригады (психологов-аддиктологов). В
+                            ходе беседы без применения насилия они помогают человеку осознать проблему и получить
+                            добровольное согласие на госпитализацию.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>3. Могут ли пациента поставить на учет в государственные органы?</span>
+                        <div class="faq-chevron"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Исключено. Наша клиника работает по строгой лицензии частного медицинского учреждения. Мы
+                            гарантируем 100% анонимность: ваши данные не передаются в государственные наркологические
+                            диспансеры, полицию или работодателям. Пациент сохраняет водительские права и репутацию.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>4. Можно ли навещать близкого человека во время стационара?</span>
+                        <div class="faq-chevron"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>В первый месяц (период адаптации) посещения и звонки ограничиваются, чтобы изолировать
+                            пациента от внешних триггеров и манипуляций. Далее, по согласованию с лечащим психологом,
+                            родственники могут посещать центр, а также принимать участие в семейных сессиях
+                            психотерапии.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>5. Входят ли лекарства и капельницы в базовую стоимость суток?</span>
+                        <div class="faq-chevron"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, в нашей клинике действует прозрачная система «Всё включено». Фиксированная стоимость
+                            суток покрывает проживание, 4-разовое питание, круглосуточное наблюдение, работу психологов
+                            и все необходимые медикаменты для детоксикации и выравнивания соматического состояния.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>6. Каковы условия проживания в вашем реабилитационном центре?</span>
+                        <div class="faq-chevron"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Пациенты проживают в загородном комфортабельном комплексе, который больше напоминает
+                            санаторий. Комнаты рассчитаны на 2–4 человека и оборудованы современной мебелью. На
+                            территории есть спортзал, столовая, залы для групповых тренингов и благоустроенная закрытая
+                            зона для прогулок.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>7. Что происходит, если у пациента случается срыв после выписки?</span>
+                        <div class="faq-chevron"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы официально даем юридическую гарантию от срыва в договоре. Если пациент полностью завершил
+                            рекомендованный курс и выполнял амбулаторные предписания, но сорвался — повторный курс
+                            противорецидивной терапии в стационаре мы проводим полностью за счет клиники.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>8. Как вести себя родственникам во время лечения близкого?</span>
+                        <div class="faq-chevron"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Зависимость — это семейная болезнь, поэтому мы параллельно ведем работу с родственниками. В
+                            клинике проходят регулярные бесплатные группы для созависимых, где психологи учат
+                            выстраивать здоровые границы, чтобы после возвращения домой не спровоцировать новый срыв.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
 
     <div id="js-faq-modal" class="faq-modal-overlay">
         <div class="faq-modal-window">
