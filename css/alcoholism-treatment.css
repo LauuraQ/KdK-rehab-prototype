@@ -1383,3 +1383,151 @@
     color: var(--color-muted);
     margin: 0;
 }
+
+
+/* --- Блок: Таблица цен --- */
+.rehab-prices {
+    background-color: var(--color-bg);
+    /* Светлый фон сайта */
+    padding: 80px 0;
+}
+
+.prices-table-wrapper {
+    max-width: 1140px;
+    margin: 40px auto 0 auto;
+    background-color: var(--color-surface);
+    /* Белая подложка таблицы */
+    border-radius: 24px;
+    box-shadow: 0 4px 25px rgba(7, 37, 63, 0.03);
+    border: 1px solid rgba(0, 121, 181, 0.05);
+    overflow: hidden;
+}
+
+.prices-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+/* Шапка таблицы */
+.prices-table th {
+    background-color: #FAFCFD;
+    color: var(--color-primary);
+    font-size: 0.95rem;
+    font-weight: 700;
+    padding: 22px 30px;
+    border-bottom: 1px solid rgba(0, 121, 181, 0.08);
+}
+
+/* Ячейки таблицы */
+.prices-table td {
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 121, 181, 0.05);
+    vertical-align: middle;
+}
+
+.prices-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Названия палат */
+.price-room-name strong {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.room-capacity {
+    font-size: 0.85rem;
+    color: var(--color-muted);
+}
+
+/* Списки услуг внутри таблицы */
+.table-services-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.table-services-list li {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #475569;
+    position: relative;
+    padding-left: 16px;
+}
+
+.table-services-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-secondary);
+    font-weight: 700;
+}
+
+/* Значения цен */
+.price-value {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    white-space: nowrap;
+}
+
+.price-value--accent {
+    color: var(--color-accent);
+    /* Выделяем оранжевым VIP цену */
+}
+
+/* Кнопки бронирования в таблице */
+.price-btn {
+    display: inline-block;
+    background-color: var(--color-secondary);
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.price-btn:hover {
+    background-color: #006394;
+}
+
+.price-btn--secondary {
+    background-color: var(--color-primary);
+}
+
+.price-btn--secondary:hover {
+    background-color: #05192b;
+}
+
+.price-btn--accent {
+    background-color: var(--color-accent);
+}
+
+.price-btn--accent:hover {
+    background-color: #d44d18;
+}
+
+/* Примечание под таблицей */
+.prices-notice {
+    max-width: 1140px;
+    margin: 25px auto 0 auto;
+    padding: 0 10px;
+}
+
+.prices-notice p {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: var(--color-muted);
+    margin: 0;
+}
